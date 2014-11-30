@@ -1,0 +1,12 @@
+.row.display .column, .row.display .columns{
+    background: #E7E7E7;
+    border: 1px solid #DDDDDD;
+    font-size: 11px;
+    padding: 6px 0;
+    text-indent: 3px;
+}
+
+.row.display{
+    background: #F4F4F4;
+    margin-bottom: 10px;
+}

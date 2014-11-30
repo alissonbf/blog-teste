@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %} Cadastro de Post | {{ block.super }}{% endblock %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <!-- Cadastro Post -->
+    <div class="row">      
+      <div class="large-10 large-centered columns">        
+        <h3 id="cadastro">Cadastro de posts<small> todos os campos são obrigatórios</small></h3>        
+        {% if mensagem %}
+            <div class="panel callout radius">
+                <p>{{ mensagem }}</p>
+            </div>                    
+        {% endif %}                 
+         <form method="post">{% csrf_token %}
+          <div class="row">
+            <div class="large-8 columns">
+              <label>Nome
+                {{ form.titulo }}
+              </label>
+              {% if form.titulo.errors %}
+                  {% for error in form.titulo.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Texto
+                {{ form.texto }}
+              </label>
+              {% if form.texto.errors %}
+                  {% for error in form.texto.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>                        
+          </div>
+                    
+          <div class="row">            
+            <div class="large-12 columns">
+              <input type="submit"class="small button success right" value="Cadastrar"/>              
+            </div>
+          </div>
+          
+        </form>                
+      </div>      
+    </div>
+    <!-- /Cadastro Post -->    
+{% endblock %}

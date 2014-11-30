@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="row">
+            <div class="large-12 large-centered columns">
+                <h3>{{ post.titulo }} <small>criado em {{ post.created_on|date:"d/m/Y" }}</small></h3>
+                {{ post.texto|linebreaks }}
+            </div>
+        </div>
+    {% endfor %}
+    
+    {% if posts %}	
+        <div class="row">
+            <div class="large-5 large-centered columns">
+                <ul class="pagination">
+                    {% if posts.has_previous %}						
+                        <li class="arrow">
+                            <a href="?pagina={{ posts.previous_page_number }}">&laquo;</a>
+                        </li>
+                    {% else %}
+                        <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                    {% endif %}                
+    
+                    {% for pagina_numero in paginacao.page_range %}                                
+                        <li {% if posts.number == pagina_numero %} class="current" {% endif %}>
+                            <a href="{{ request.path }}?pagina={{ pagina_numero }}">
+                                {{ pagina_numero }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                                                    
+                    {% if posts.has_next %}
+                        <li class="arrow">
+                            <a href="?pagina={{ posts.next_page_number }}">&raquo;</a>
+                        </li>
+                    {% else %}
+                        <li class="arrow unavailable"><a href="">&raquo;</a></li>
+                    {% endif %}										                                
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Entrar | {{ block.super }}{% endblock %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <!-- Formulario de Login -->
+    <div class="row">                  
+      <div class="large-10 large-centered columns">
+        <!--Login-->
+        <h3 id="assinaturas">Entrar<small> no sistema</small></h3>              
+          <form method="post">{% csrf_token %}
+            <div class="row">
+                <div class="large-6 large-centered columns">
+                    {{ form }}
+                </div>
+            </div>
+            <div class="row">            
+              <div class="large-6 large-centered columns">
+                <input type="submit"class="small button success right" value="Entrar"/>              
+              </div>
+            </div>
+          </form>
+        <!--/Login-->
+      </div>      
+    </div>       
+    <!-- /Formulario de Login -->
+{% endblock %}

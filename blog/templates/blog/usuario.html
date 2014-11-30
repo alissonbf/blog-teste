@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %} Cadastro de Usuários | {{ block.super }}{% endblock %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <!-- Cadastro Usuario -->
+    <div class="row">      
+      <div class="large-10 large-centered columns">        
+        <h3 id="cadastro">Cadastro<small> todos os campos são obrigatórios</small></h3>        
+        {% if mensagem %}
+            <div class="panel callout radius">
+                <p>{{ mensagem }}</p>
+            </div>                    
+        {% endif %}                 
+         <form method="post">{% csrf_token %}
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Nome
+                {{ form.first_name }}
+              </label>
+              {% if form.first_name.errors %}
+                  {% for error in form.first_name.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>
+            <div class="large-6 columns">
+              <label>Sobrenome
+                {{ form.last_name }}
+              </label>
+              {% if form.last_name.errors %}
+                  {% for error in form.last_name.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>            
+          </div>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Usuário
+                {{ form.username }}
+              </label>
+              {% if form.username.errors %}
+                  {% for error in form.username.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>
+            <div class="large-6 columns">
+              <label>E-mail
+                {{ form.email }}
+              </label>
+              {% if form.email.errors %}
+                  {% for error in form.email.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}                              
+            </div>            
+          </div>
+          
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Senha
+                {{ form.password }}
+              </label>
+              {% if form.password.errors %}
+                  {% for error in form.password.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>
+            <div class="large-6 columns">
+              <label>Confirmar Senha
+                {{ form.confirme_a_senha }}
+              </label>
+              {% if form.confirme_a_senha.errors %}
+                  {% for error in form.confirme_a_senha.errors %}                                                
+                    <small class="error">{{ error }}</small>                          
+                  {% endfor %}
+              {% endif %}              
+            </div>            
+          </div>
+                    
+          <div class="row">            
+            <div class="large-12 columns">
+              <input type="submit"class="small button success right" value="Cadastrar"/>              
+            </div>
+          </div>
+          
+        </form>                
+      </div>      
+    </div>
+    <!-- /Cadastro Usuario -->
+    
+    <!-- Usuario Cadastrado-->
+    {% if usuario %}
+        <div class="row">
+            <div class="large-10 large-centered columns">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="100%">Nome Completo</th>
+                            <th>Usuario</th>
+                            <th>E-mail</th>
+                            <th>Data do Registro</th>
+                        </tr>
+                    </thead>
+                    <tbody>                    
+                        <tr>
+                            <td>{{ usuario.first_name }} {{ usuario.last_name }}</td>
+                            <td>{{ usuario.username }}</td>
+                            <td>{{ usuario.email }}</td>
+                            <td>{{ usuario.date_joined|date:"d/m/Y" }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+    <!-- /Usuario Cadastrado-->
+{% endblock %}

@@ -1,0 +1,61 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'site/css/foundation.css' %}">
+    {% block extracss %}{% endblock %}
+    <script src="{% static 'site/js/vendor/modernizr.js' %}"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="row">
+      <div class="large-3 columns">        
+            {% if user.is_authenticated %}
+              <h4><a href="{% url 'home' %}">Olá, {{ user.first_name }}</a></h4>
+            {% else %}
+              <h4><a href="{% url 'home' %}">Blog</a></h4>
+            {% endif %}                             
+      </div>
+      <div class="large-9 columns">
+        <ul class="inline-list right">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'post' %}">Criar Post's</a></li>
+            <li><a href="{% url 'usuario' %}">Criar Usuario</a></li>                    
+            {% if user.is_authenticated %}
+              <li><a href="/sair/">Sair</a></li>              
+            {% else %}
+              <li><a href="/entrar/">Entrar</a></li>
+            {% endif %}           
+        </ul>
+      </div>
+    </div>
+    <!--/Header-->
+    
+    <!--Conteudo-->
+    {% block content %}{% endblock %}        
+    <!--/Conteudo-->
+
+    <!--Rodape-->               
+    <footer class="row">
+      <div class="large-12 columns"><hr>
+          <div class="row">   
+            <div class="large-4 large-centered columns">
+                <p></p>
+            </div>                 
+          </div>
+      </div>      
+    </footer>
+    <!--/Rodape-->
+    
+    
+    <script src="{% static 'site/js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'site/js/foundation.min.js' %}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    {% block extrajs %}{% endblock %}
+  </body>
+</html>
