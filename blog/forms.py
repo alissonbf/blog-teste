@@ -31,7 +31,8 @@ class FormUser(forms.ModelForm):
         fields = ('first_name','last_name','email','username','password',)
         
     first_name       = forms.CharField(required=True,)    
-    last_name        = forms.CharField(required=True,)    
+    last_name        = forms.CharField(required=True,)
+    email            = forms.CharField(required=True,)
     confirme_a_senha = forms.CharField(max_length=30, widget=forms.PasswordInput)
     password         = forms.CharField(max_length=30, widget=forms.PasswordInput)
 
