@@ -79,13 +79,13 @@ class BlogTestCase(TestCase):
         self.assertEqual(test_email.errors['email'],[u'Informe um endereço de email válido.'])
         
         # Primeira letra do nome e sobrenome em caixa alta
-        nome = {'first_name':'luana','last_name':'costa araujo','email':'luana.com','username':'luana','password':'123','confirme_a_senha':'123',}            
+        nome = {'first_name':'luana','last_name':'costa araujo','email':'luana@gmail.com','username':'luana','password':'123','confirme_a_senha':'123',}            
         test_nome = FormUser(data=nome)        
         self.assertEqual(test_nome.errors['first_name'],[u'O nome deve começar com letra maiuscula.'])
         self.assertEqual(test_nome.errors['last_name'],[u'O sobrenome deve começar com letra maiuscula.'])
         
         # Confirmação de senha errada
-        senha = {'first_name':'luana','last_name':'costa araujo','email':'luana.com','username':'luana','password':'123','confirme_a_senha':'123456',}                    
+        senha = {'first_name':'luana','last_name':'costa araujo','email':'luana@gmail.com','username':'luana','password':'123','confirme_a_senha':'123456',}                    
         test_senha = FormUser(data=senha)
         self.assertEqual(test_senha.errors['confirme_a_senha'],[u'Confirmacao de senha não confere!'])
 
