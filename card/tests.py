@@ -69,7 +69,11 @@ class CardTestCase(TestCase):
         
         # Cartão de credito invalido
         test_cartao = FormCard(data={'bandeira':'visa','nome':'Sofia S Fernandes','numero':00000000001234123413241234,'mes_val':12,'ano_val':2016,'cvc':891,})
-        self.assertEqual(test_cartao.errors['numero'],[u'Cartão invalido.'])
+        self.assertEqual(test_cartao.errors['numero'],[u'Cartão invalido. Verifique se digitou todos os dados corretamente'])
+
+        # Cartão de credito expirado
+        test_cartao_expirado = FormCard(data={'bandeira':'visa','nome':'Sofia S Fernandes','numero':4916475344022891,'mes_val':12,'ano_val':2013,'cvc':891,})
+        self.assertEqual(test_cartao_expirado.errors['mes_val'],[u'Data de validade do cartão expirou.'])
         
         # Cartão de credito valido
         test_cartao_valido = FormCard(data={'bandeira':'visa','nome':'Sofia S Fernandes','numero':4916475344022891,'mes_val':12,'ano_val':2016,'cvc':891,})

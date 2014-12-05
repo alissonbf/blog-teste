@@ -38,7 +38,7 @@ class FormCard(forms.ModelForm):
     numero      = forms.IntegerField(required=True,)
     mes_val     = forms.IntegerField(label=False,widget=forms.Select(choices=MESES_CHOICES),required=True,)
     ano_val     = forms.IntegerField(label=False,widget=forms.Select(choices=ANOS_CHOICES),required=True,)
-    cvc         = forms.IntegerField(label=u'Cód. de segurança',required=True)
+    cvc         = forms.CharField(label=u'Cód. de segurança',max_length=4,min_length=3,required=True)
     
     def clean_numero(self):
         """ Validação do cartão """
@@ -50,11 +50,25 @@ class FormCard(forms.ModelForm):
             cvc=int(self.data['cvc'])
         )        
         
-        if not card.is_valid:
-            raise forms.ValidationError('Cartão invalido.')
+        if not card.is_mod10_valid:
+            raise forms.ValidationError('Cartão invalido. Verifique se digitou todos os dados corretamente')
 
         return self.cleaned_data['numero']    
+
+    def clean_mes_val(self):
+        """ Validação do cartão """
         
+        card = pycard.Card(
+            number=str(self.data['numero']),
+            month=int(self.cleaned_data['mes_val']),
+            year=int(self.data['ano_val']),
+            cvc=int(self.data['cvc'])
+        )            
+
+        if card.is_expired:
+            raise forms.ValidationError('Data de validade do cartão expirou.')
+
+        return self.cleaned_data['mes_val']        
         
         
     
