@@ -40,6 +40,7 @@ urlpatterns = patterns('',
     url(r'^$', 'blog.views.home', name='home'),
     
     url(r'^blog/', include('blog.urls')),
+    url(r'^card-credit/', include('card.urls')),
     
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),

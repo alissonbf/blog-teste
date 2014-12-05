@@ -70,8 +70,8 @@ class BlogTestCase(TestCase):
         
         # Formulario valido
         valido = {'first_name':'Luana','last_name':'Costa Araujo','email':'luana@gmail.com','username':'luana','password':'123','confirme_a_senha':'123',}        
-        test_valido = FormUser(data=vazio)
-        self.assertFalse(test_valido.is_valid())
+        test_valido = FormUser(data=valido)
+        self.assertTrue(test_valido.is_valid())
         
         # E-mail inválido
         email = {'first_name':'Luana','last_name':'Costa Araujo','email':'luana.com','username':'luana','password':'123','confirme_a_senha':'123',}
