@@ -89,8 +89,11 @@ class BlogTestCase(TestCase):
         test_senha = FormUser(data=senha)
         self.assertEqual(test_senha.errors['confirme_a_senha'],[u'Confirmacao de senha não confere!'])
 
+    def testEnviarEmail(self):
+        """ Caso de Teste: Enviar email via smtp do gmail  """
 
-
+        response = self.client.post(reverse('enviar_email'))
+        self.assertEquals(response.status_code, 200)
 
 
 

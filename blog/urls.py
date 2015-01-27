@@ -26,4 +26,5 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('blog.views',
     url(r'^cadastro-usuario/$', 'usuario', name='usuario'),
     url(r'^cadastro-post/$', 'post', name='post'),
+    url(r'^enviar-email/$','enviar_email', name='enviar_email')
 )

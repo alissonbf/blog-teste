@@ -19,6 +19,7 @@ Criação         Atualização
 ==============  ==================
 
 """
+import smtplib
 
 from django.shortcuts   import render_to_response,redirect
 from django.template    import RequestContext
@@ -79,3 +80,17 @@ def post(request):
         form = FormPost()    
     
     return render_to_response('blog/post.html',locals(),context_instance=RequestContext(request),)
+
+def enviar_email(request):
+    """ Pagina de envio de emails """
+
+    smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
+    smtpserver.ehlo()
+    smtpserver.starttls()
+    smtpserver.ehlo()
+
+    smtpserver.login('souzamelolarissa@gmail.com', '6b16ae55')
+    smtpserver.sendmail('alisson.barbosa@pgplayer.com.br','souzamelolarissa@gmail.com', 'Teste envio de email.')
+    smtpserver.close()
+
+    return render_to_response('blog/email.html',locals(),context_instance=RequestContext(request),)

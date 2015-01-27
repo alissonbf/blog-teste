@@ -1060,3 +1060,30 @@ Traceback (most recent call last):
   File "/var/www/html/laboratorio/teste-planetkids/blog-teste/card/forms.py", line 41, in FormCard
     cvc         = forms.Field(label=u'Cód. de segurança',max_length=4,required=True)
 TypeError: __init__() got an unexpected keyword argument 'max_length'
+Internal Server Error: /blog/enviar-email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 92, in enviar_email
+    smtpserver.login('souzamelolarissa@gmail.com', '6b16ae55')
+  File "C:\Python27\lib\smtplib.py", line 615, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbv4A\n5.7.14 JKNrN7wBjQvhJuczYizqdOHiUP6hXEvNud9XAh8ZDNMYUE8LvkP_1O70OmSMvGxSl7n7NJ\n5.7.14 oN7uHuWocn8lPLY4asEY-Cnnd64ZB-xUAfcFJnSEMj_uTP654KJSrsrs8q4MCwARleYmjf\n5.7.14 z9xQwHdQNRBoc9czckPDeNLwCn6cn7UvfoORpWAg52ny9xnPhHmQP9apRcO8AlzobO__sZ\n5.7.14 oHeVlkA> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 t2sm1089150qae.6 - gsmtp')
+Internal Server Error: /blog/enviar-email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 92, in enviar_email
+    smtpserver.login('souzamelolarissa@gmail.com', '6b16ae55')
+  File "C:\Python27\lib\smtplib.py", line 615, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbtwj\n5.7.14 wMk9mCwH4uaG8NYYwnlK2epFJbbp-CLrmcvMGy52EPJLok-GsyTzHovyALVE9p7p920bHa\n5.7.14 VzKjLStt0xaxJOMdPC3Q9_nb5M1JdwUwNiOhNH_AIulb-TIo6eR13NuFl-BgI0-Rwj9ZY5\n5.7.14 GCUbbYw3FIYOURXEK3-NkMnCljuigMfRHxhdrBPYKo8tFCBZlW9htGtdIdiUaFgYpUEBcX\n5.7.14 qplZDiheseVdSJyGpXVXhB2ZHINc> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 10sm1072464qap.39 - gsmtp')
+Internal Server Error: /blog/enviar-email/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 92, in enviar_email
+    smtpserver.login('souzamelolarissa@gmail.com', '6b16ae55')
+  File "C:\Python27\lib\smtplib.py", line 615, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvZF\n5.7.14 8Smp7AhMMv8CXT52qEyPnTRV9qQpsrhvmPIoBVpubtayrd3yI_y1AW9gfmljk7DS-N82-_\n5.7.14 huUieZnGx6JMP8TDzVpoLT9P2kksc10SbKEWMNz6uKqh1TbqacYqB9JS8FGhjNMGittJa0\n5.7.14 Yl_WlQc4v0Hj9a9KN11w59cucjJZK3q0FBab1RTXIYg6wuCyA2rCp0IiTfROS9lBWeiFZ9\n5.7.14 vuK0raw> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 d62sm1102674qga.15 - gsmtp')
