@@ -1,4 +1,4 @@
 blog-teste
 ==========
 
-Blog simples utilizando django e foundation
+Blog simples utilizando django e foundation.
