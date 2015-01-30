@@ -9,6 +9,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
+import sys
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -69,6 +71,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'blog_db.sqlite3'),
     }
 }
+
+# Utiliza o sqlite em testes para agilizar
+if 'test' in sys.argv:
+    DATABASES['default'] = {'ENGINE': 'django.db.backends.sqlite3'}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

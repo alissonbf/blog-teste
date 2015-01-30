@@ -1087,3 +1087,4 @@ Traceback (most recent call last):
   File "C:\Python27\lib\smtplib.py", line 615, in login
     raise SMTPAuthenticationError(code, resp)
 SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvZF\n5.7.14 8Smp7AhMMv8CXT52qEyPnTRV9qQpsrhvmPIoBVpubtayrd3yI_y1AW9gfmljk7DS-N82-_\n5.7.14 huUieZnGx6JMP8TDzVpoLT9P2kksc10SbKEWMNz6uKqh1TbqacYqB9JS8FGhjNMGittJa0\n5.7.14 Yl_WlQc4v0Hj9a9KN11w59cucjJZK3q0FBab1RTXIYg6wuCyA2rCp0IiTfROS9lBWeiFZ9\n5.7.14 vuK0raw> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 d62sm1102674qga.15 - gsmtp')
+Not Found: /favicon.ico
