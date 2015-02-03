@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     # Pacotes alisson
     'blog',
     'card',
+    'galeria',
 
     # Pacotes de terceiros
     'pycard',

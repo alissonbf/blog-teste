@@ -24,7 +24,8 @@
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'post' %}">Criar Post's</a></li>
             <li><a href="{% url 'card' %}">Criar Cartão de Crédito</a></li>
-            <li><a href="{% url 'usuario' %}">Criar Usuario</a></li>                    
+            <li><a href="{% url 'usuario' %}">Criar Usuario</a></li>
+            <li><a href="{% url 'galeria' %}">Galerias</a></li>
             {% if user.is_authenticated %}
               <li><a href="/sair/">Sair</a></li>              
             {% else %}
