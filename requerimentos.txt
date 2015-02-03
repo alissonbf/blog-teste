@@ -1,2 +1,5 @@
 django<=1.6
 pycard
+django-filebrowser
+django-grappelli
+feedparser

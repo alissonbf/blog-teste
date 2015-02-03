@@ -13,6 +13,7 @@ import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -36,15 +37,24 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
+    # Pacotes de terceiros
+    'grappelli.dashboard',
+    'grappelli',
+    'filebrowser',
+
+    # Pacotes do django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
+    # Pacotes alisson
     'blog',
     'card',
+
+    # Pacotes de terceiros
     'pycard',
 )
 
@@ -56,6 +66,17 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.contrib.messages.context_processors.messages",
+    "django.core.context_processors.request",
+)
+
 
 ROOT_URLCONF = 'teste.urls'
 
@@ -123,6 +144,23 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, 'templates')
 )
 
+# Configuração do Grappelli
+GRAPPELLI_ADMIN_TITLE = "Blog Teste"
+GRAPPELLI_INDEX_DASHBOARD = 'teste.somefile.CustomIndexDashboard'
+
+# Configuração do File Browser
+FILEBROWSER_VERSIONS_BASEDIR = '_versions'
+FILEBROWSER_DIRECTORY = 'uploads/'
+FILEBROWSER_EXTENSIONS = {
+    'Folder': [''],
+    'Image': ['.jpg','.jpeg','.gif','.png','.tif','.tiff'],
+    'Document': ['.pdf','.doc','.rtf','.txt','.xls','.csv'],
+    'Video': ['.mov','.wmv','.mpeg','.mpg','.avi','.rm'],
+    'Audio': ['.mp3','.mp4','.wav','.aiff','.midi','.m4p']
+}
+FILEBROWSER_MAX_UPLOAD_SIZE = 10485760
+FILEBROWSER_NORMALIZE_FILENAME = True
+FILEBROWSER_OVERWRITE_EXISTING = False
 # Configuração de logs
 LOGGING = {
     'version': 1,

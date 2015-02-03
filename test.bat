@@ -1,1 +1,1 @@
-python manage.py test blog
+python manage.py test filebrowser

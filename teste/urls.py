@@ -30,10 +30,12 @@ admin.autodiscover()
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
 
+# configuração do filebrowser
+from filebrowser.sites import site
+
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'teste.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^admin/filebrowser/', include(site.urls)),
+    url(r'^grappelli/', include('grappelli.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
     
