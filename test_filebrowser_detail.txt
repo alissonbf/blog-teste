@@ -1,0 +1,181 @@
+(planetkids) C:\Users\aliss_000\projetos\blog-teste>python manage.py test filebrowser
+('Creating Test for the FileBrowser site:', 'filebrowser')
+Creating test database for alias 'default'...
+....E...FFEEE....
+Select a version you want to generate:
+ * large
+ * admin_thumbnail
+(leave blank to generate all versions): generating version "large" for: fb_test_directory/fb_tmp_dir/fb_tmp_dir_sub/testimage.jpg
+E................F('Removing left-over tmp dir:', 'uploads/tmp_test_0')
+.EE.
+======================================================================
+ERROR: test_delete (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 440, in test_delete
+    f_version = self.f_image.version_generate("large")
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 508, in version_generate
+    version_path = self._generate_version(version_suffix)
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 519, in _generate_version
+    tmpfile = File(NamedTemporaryFile())
+  File "C:\Python27\lib\tempfile.py", line 450, in NamedTemporaryFile
+    dir = gettempdir()
+  File "C:\Python27\lib\tempfile.py", line 269, in gettempdir
+    tempdir = _get_default_tempdir()
+  File "C:\Python27\lib\tempfile.py", line 212, in _get_default_tempdir
+    ("No usable temporary directory found in %s" % dirlist))
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_version_attributes_1 (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 319, in test_version_attributes_1
+    f_version = self.f_image.version_generate("large")
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 508, in version_generate
+    version_path = self._generate_version(version_suffix)
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 519, in _generate_version
+    tmpfile = File(NamedTemporaryFile())
+  File "C:\Python27\lib\tempfile.py", line 450, in NamedTemporaryFile
+    dir = gettempdir()
+  File "C:\Python27\lib\tempfile.py", line 269, in gettempdir
+    tempdir = _get_default_tempdir()
+  File "C:\Python27\lib\tempfile.py", line 212, in _get_default_tempdir
+    ("No usable temporary directory found in %s" % dirlist))
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_version_attributes_2 (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 364, in test_version_attributes_2
+    f_version = self.f_image.version_generate("large")
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 508, in version_generate
+    version_path = self._generate_version(version_suffix)
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 519, in _generate_version
+    tmpfile = File(NamedTemporaryFile())
+  File "C:\Python27\lib\tempfile.py", line 450, in NamedTemporaryFile
+    dir = gettempdir()
+  File "C:\Python27\lib\tempfile.py", line 269, in gettempdir
+    tempdir = _get_default_tempdir()
+  File "C:\Python27\lib\tempfile.py", line 212, in _get_default_tempdir
+    ("No usable temporary directory found in %s" % dirlist))
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_version_attributes_3 (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 410, in test_version_attributes_3
+    f_version = self.f_image.version_generate("large")
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 508, in version_generate
+    version_path = self._generate_version(version_suffix)
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 519, in _generate_version
+    tmpfile = File(NamedTemporaryFile())
+  File "C:\Python27\lib\tempfile.py", line 450, in NamedTemporaryFile
+    dir = gettempdir()
+  File "C:\Python27\lib\tempfile.py", line 269, in gettempdir
+    tempdir = _get_default_tempdir()
+  File "C:\Python27\lib\tempfile.py", line 212, in _get_default_tempdir
+    ("No usable temporary directory found in %s" % dirlist))
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_fb_version_generate (filebrowser.tests.test_commands.CommandsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_commands.py", line 104, in test_fb_version_generate
+    call_command('fb_version_generate', 'fb_test_directory')
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line 159, in call_command
+    return klass.execute(*args, **defaults)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 285, in execute
+    output = self.handle(*args, **options)
+  File "C:\Python27\lib\site-packages\filebrowser\management\commands\fb_version_generate.py", line 68, in handle
+    versionobject = fileobject.version_generate(selected_version)  # FIXME force?
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 508, in version_generate
+    version_path = self._generate_version(version_suffix)
+  File "C:\Python27\lib\site-packages\filebrowser\base.py", line 519, in _generate_version
+    tmpfile = File(NamedTemporaryFile())
+  File "C:\Python27\lib\tempfile.py", line 450, in NamedTemporaryFile
+    dir = gettempdir()
+  File "C:\Python27\lib\tempfile.py", line 269, in gettempdir
+    tempdir = _get_default_tempdir()
+  File "C:\Python27\lib\tempfile.py", line 212, in _get_default_tempdir
+    ("No usable temporary directory found in %s" % dirlist))
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_version (filebrowser.tests.test_versions.VersionTemplateTagsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_versions.py", line 126, in test_version
+    r = t.render(c)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 85, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+ERROR: test_version_object (filebrowser.tests.test_versions.VersionTemplateTagsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_versions.py", line 209, in test_version_object
+    r = t.render(c)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 85, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 98, in render
+    raise e
+IOError: [Errno 2] No usable temporary directory found in ['C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'C:\\Users\\ALISS_~1\\AppData\\Local\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\
+tmp', 'C:\\Users\\aliss_000\\projetos\\blog-teste']
+
+======================================================================
+FAIL: test_init_attributes (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 185, in test_init_attributes
+    self.assertEqual(self.f_image.head, 'fb_test_directory/fb_tmp_dir/fb_tmp_dir_sub')
+AssertionError: 'fb_test_directory/fb_tmp_dir\\fb_tmp_dir_sub' != 'fb_test_directory/fb_tmp_dir/fb_tmp_dir_sub'
+
+======================================================================
+FAIL: test_path_url_attributes (filebrowser.tests.test_base.FileObjectAttributeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_base.py", line 220, in test_path_url_attributes
+    self.assertEqual(self.f_image.path_full, os.path.join(site.storage.location, site.directory, "fb_tmp_dir/fb_tmp_dir_sub/testimage.jpg"))
+AssertionError: u'C:\\Users\\aliss_000\\projetos\\blog-teste\\teste\\media\\fb_test_directory\\fb_tmp_dir\\fb_tmp_dir_sub\\testimage.jpg' != 'C:\\Users\\aliss_000\\projetos\\blog-teste\
+\teste\\media/fb_test_directory/fb_tmp_dir/fb_tmp_dir_sub/testimage.jpg'
+
+======================================================================
+FAIL: runTest (filebrowser.tests.test_sites.TestSite_filebrowser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_sites.py", line 399, in runTest
+    test_do_upload(self)
+  File "C:\Python27\lib\site-packages\filebrowser\tests\test_sites.py", line 146, in test_do_upload
+    test.assertTrue(permissions_default == permissions_file)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 39 tests in 1.115s
+
+FAILED (failures=3, errors=7)
+Destroying test database for alias 'default'...

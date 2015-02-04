@@ -2706,3 +2706,350 @@ Not Found: /galeria/path/to/your/img-th
 Not Found: /galeria/path/to/your/img-th
 Not Found: /galeria/path/to/your/img-th
 Not Found: /galeria/path/to/your/img-th
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /adminurl/filebrowser/detail/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /adminurl/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\urls.py", line 27, in <module>
+    admin.autodiscover()
+  File "C:\Python27\lib\site-packages\django\contrib\admin\__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\admin.py", line 45, in <module>
+    from teste.actions import foo
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 33, in <module>
+    foo.applies_to(lambda fileobject: fileobject.filetype == 'Image')
+AttributeError: 'function' object has no attribute 'applies_to'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 65, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 487, in detail
+    self.storage.move(fileobject.path, os.path.join(fileobject.head, new_name))
+  File "C:\Python27\lib\site-packages\filebrowser\storage.py", line 58, in move
+    file_move_safe(self.path(old_file_name), self.path(new_file_name), allow_overwrite=True)
+  File "C:\Python27\lib\site-packages\django\core\files\move.py", line 66, in file_move_safe
+    with open(old_file_name, 'rb') as old_file:
+IOError: [Errno 13] Permission denied: u'C:\\Users\\aliss_000\\projetos\\blog-teste\\teste\\media\\uploads\\teste'
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 65, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 487, in detail
+    self.storage.move(fileobject.path, os.path.join(fileobject.head, new_name))
+  File "C:\Python27\lib\site-packages\filebrowser\storage.py", line 58, in move
+    file_move_safe(self.path(old_file_name), self.path(new_file_name), allow_overwrite=True)
+  File "C:\Python27\lib\site-packages\django\core\files\move.py", line 66, in file_move_safe
+    with open(old_file_name, 'rb') as old_file:
+IOError: [Errno 13] Permission denied: u'C:\\Users\\aliss_000\\projetos\\blog-teste\\teste\\media\\uploads\\teste'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\urls.py", line 64, in <module>
+    from teste.actions import foo
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 35, in <module>
+    foo.applies_to(lambda fileobject: fileobject.filetype == 'Video')
+AttributeError: 'function' object has no attribute 'applies_to'
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\urls.py", line 64, in <module>
+    from teste.actions import foo
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 35, in <module>
+    foo.applies_to(lambda fileobject: fileobject.filetype == 'Video')
+AttributeError: 'function' object has no attribute 'applies_to'
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 65, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 481, in detail
+    action_response = action(request=request, fileobjects=[fileobject])
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 36, in make_monochrome
+    transpose_image(request, fileobjects, 'L')
+  File "C:\Python27\lib\site-packages\filebrowser\actions.py", line 36, in transpose_image
+    new_image = im.transpose(operation)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1915, in transpose
+    return self._new(self.im.transpose(method))
+TypeError: an integer is required
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 65, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 481, in detail
+    action_response = action(request=request, fileobjects=[fileobject])
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 95, in make_monochrome
+    convert_image(request, fileobjects, 'L')
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 87, in convert_image
+    files = '&f='.join([f.path_relative for f in fileobjects])
+AttributeError: FileObject instance has no attribute 'path_relative'
+Internal Server Error: /admin/filebrowser/detail/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 65, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 481, in detail
+    action_response = action(request=request, fileobjects=[fileobject])
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 96, in make_monochrome
+    convert_image(request, fileobjects, 'L')
+  File "C:\Users\aliss_000\projetos\blog-teste\teste\actions.py", line 65, in convert_image
+    files = '&f='.join([f.path_relative for f in fileobjects])
+AttributeError: FileObject instance has no attribute 'path_relative'
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 356, in browse
+    }, context_instance=Context(request, current_app=self.name))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 98, in render
+    raise e
+IOError: cannot identify image file <File: C:\Users\aliss_000\projetos\blog-teste\teste\media\uploads\rock_lee_sd\ep01\naruto_sd_-_hinata_sets_off_some_fireworks.mp4>
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\views\decorators.py", line 17, in _checklogin
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 356, in browse
+    }, context_instance=Context(request, current_app=self.name))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 98, in render
+    raise e
+IOError: cannot identify image file <File: C:\Users\aliss_000\projetos\blog-teste\teste\media\uploads\rock_lee_sd\ep01\naruto_sd_-_hinata_sets_off_some_fireworks.mp4>
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico

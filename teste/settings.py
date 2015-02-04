@@ -155,13 +155,22 @@ FILEBROWSER_DIRECTORY = 'uploads/'
 FILEBROWSER_EXTENSIONS = {
     'Folder': [''],
     'Image': ['.jpg','.jpeg','.gif','.png','.tif','.tiff'],
-    'Document': ['.pdf','.doc','.rtf','.txt','.xls','.csv'],
-    'Video': ['.mov','.wmv','.mpeg','.mpg','.avi','.rm'],
-    'Audio': ['.mp3','.mp4','.wav','.aiff','.midi','.m4p']
+    'Document': ['.pdf','.doc','.docx','.rtf','.txt','.xls','.csv'],
+    'Video': ['.mov','.wmv','.mpeg','.mpg','.avi','.rm','.mp4'],
+    'Audio': ['.mp3','.wav','.aiff','.midi','.m4p']
 }
 FILEBROWSER_MAX_UPLOAD_SIZE = 10485760
 FILEBROWSER_NORMALIZE_FILENAME = True
 FILEBROWSER_OVERWRITE_EXISTING = False
+
+
+from filebrowser.sites import site
+
+# Image actions
+from teste.actions import make_monochrome, flv_to_mp4
+site.add_action(make_monochrome)
+site.add_action(flv_to_mp4)
+
 # Configuração de logs
 LOGGING = {
     'version': 1,
