@@ -1,0 +1,4 @@
+{{ object.titulo }}
+{{ object.texto }}
+{{ object.created_on }}
+{{ object.updated_on }}

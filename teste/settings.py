@@ -66,6 +66,8 @@ INSTALLED_APPS = (
 
     # Pacotes de terceiros
     'pycard',
+    'haystack',
+    'whoosh',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -176,6 +178,13 @@ TEMPLATE_DIRS = (
 # Configuração do Grappelli
 GRAPPELLI_ADMIN_TITLE = "Blog Teste"
 GRAPPELLI_INDEX_DASHBOARD = 'teste.somefile.CustomIndexDashboard'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
+}
 
 # Configuração do File Browser
 """

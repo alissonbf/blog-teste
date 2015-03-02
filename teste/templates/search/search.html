@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <!-- Busca -->
+    <div class="row">
+      <div class="large-12 large-centered columns">
+        <h3 id="cadastro">Busca</h3>
+            <form method="get" action=".">
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>{{ form.q.label }}
+                      {{ form.q }}
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>{{ form.models.label }}
+                      {{ form.models }}
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <input type="submit"class="small button success right" value="Search"/>
+                </div>
+              </div>
+
+            </form>
+      </div>
+    </div>
+    {% if query %}
+        <div class="row">
+            <div class="large-12 large-centered columns">
+                <h3>Results</h3>
+
+                {% for result in page.object_list %}
+                    <h4>{{ result.object.titulo }}</h4>
+                    <p>{{ result.object.texto }}</p>
+                {% empty %}
+                    <p>No results found.</p>
+                {% endfor %}
+            </div>
+        </div>
+        {% if page.has_previous or page.has_next %}
+            <div class="large-12 large-centered columns">
+                {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                |
+                {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+            </div>
+        {% endif %}
+    {% else %}
+        {# Show some example queries to run, maybe query syntax, something else? #}
+    {% endif %}
+    <!-- /Busca -->
+{% endblock %}

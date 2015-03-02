@@ -47,6 +47,8 @@ urlpatterns = patterns('',
 
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),
+
+    url(r'^search/', include('haystack.urls')),
 )
 
 if settings.LOCAL:
