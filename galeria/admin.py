@@ -23,7 +23,7 @@ Criação         Atualização
 
 from django.contrib     import admin
 
-from models import Arquivo, Galeria
+from models import Arquivo, Galeria, Imagem
 
 class ArquivoInline(admin.TabularInline):
     """
@@ -44,3 +44,4 @@ class AdminGaleria(admin.ModelAdmin):
     ]
 
 admin.site.register(Galeria, AdminGaleria)
+admin.site.register(Imagem)

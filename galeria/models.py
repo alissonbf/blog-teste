@@ -59,3 +59,21 @@ class Arquivo(models.Model):
 
     created_on = models.DateTimeField(u'Criado em', auto_now_add=True)
     updated_on = models.DateTimeField(u'Atualizado em', auto_now=True)
+
+class Imagem(models.Model):
+    """
+        Arquivo de imagem
+    """
+    class Meta:
+        ordering = ['-created_on',]
+        verbose_name = u'Imagem'
+        verbose_name_plural = u'Imagens'
+
+    nome        = models.CharField(u'Nome', max_length=100, blank=True, null=True)
+    arquivo     = models.ImageField(u'Arquivo', upload_to="galeria/imagem", blank=True, null=True)
+
+    created_on = models.DateTimeField(u'Criado em', auto_now_add=True)
+    updated_on = models.DateTimeField(u'Atualizado em', auto_now=True)
+
+    def __unicode__(self):
+        return self.nome

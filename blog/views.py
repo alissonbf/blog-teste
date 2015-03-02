@@ -21,6 +21,14 @@ Criação         Atualização
 """
 import smtplib
 
+
+from django.conf import settings
+
+from boto.s3.connection import S3Connection
+
+from boto.s3.key import Key
+from django.http import HttpResponse
+
 from django.shortcuts   import render_to_response,redirect
 from django.template    import RequestContext
 
@@ -94,3 +102,41 @@ def enviar_email(request):
     smtpserver.close()
 
     return render_to_response('blog/email.html',locals(),context_instance=RequestContext(request),)
+
+def video(request):
+    """
+        Retorna um objeto HttpResponse, com o conteudo de um arquivo .m3u8, seguindo os padrões do HLS
+    """
+
+    conn = S3Connection(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY)
+
+    conn.lookup(settings.AWS_STORAGE_BUCKET_NAME)
+
+    bucket = conn.get_bucket(settings.AWS_STORAGE_BUCKET_NAME)
+
+    k = Key(bucket)
+    k.key = "hinata-sets-off-some-fireworks-mod.m3u8"
+    s = k.get_contents_as_string()
+
+    string = ''
+    link = False
+    count = 0
+    for line in s.split('\n'):
+        if link:
+            line = line.strip()
+            line = "generate_temp_url if-1"
+            link = False
+            count += 1
+        if '#EXTINF' in line:
+            link = True
+        if '#EXT-X-TARGETDURATION' in line:
+            line = line + '\n' + '#EXT-X-MEDIA-SEQUENCE:0'
+        if '#EXT-X-KEY:METHOD=AES-128' in line:
+            line = 'key.txt'
+            line = "generate_temp_url if-4"
+            line = '#EXT-X-KEY:METHOD=AES-128,URI="'+line+'"'
+        string = string + line + '\n'
+
+    response = HttpResponse(string, content_type='application/x-mpegURL')
+    response['Content-Disposition'] = 'attachment; filename="index.m3u8"'
+    return response

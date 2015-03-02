@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% load fb_versions %}
+{% comment "restos do filebrowser" %}
+    {% load fb_versions %}
+{% endcomment %}
 
 {% block title %} Cadastro de Post | {{ block.super }}{% endblock %}
 
@@ -12,17 +14,23 @@
     <!-- Galeria -->
     <div class="row">      
       <div class="large-10 large-centered columns">
+            {% comment "restos do filebrowser" %}
+                {% for galeria in galerias %}
+                    <h4>{{ galeria.nome }}</h4>
+                    <ul class="clearing-thumbs" data-clearing>
+                      {% for arq in galeria.arquivo.all %}
+                        <li><a href="{{ arq.arquivo.url }}"><img src="{% version arq.arquivo 'thumbnail' %}"></a></li>
+                      {% endfor %}
+                    </ul>
+                {% endfor %}
+            {% endcomment %}
 
-        {% for galeria in galerias %}
-            <h4>{{ galeria.nome }}</h4>
+            <h4>Imagens</h4>
             <ul class="clearing-thumbs" data-clearing>
-              {% for arq in galeria.arquivo.all %}
-                <li><a href="{{ arq.arquivo.url }}"><img src="{% version arq.arquivo 'thumbnail' %}"></a></li>
+              {% for imagem in imagens %}
+                <li><a href="{{ imagem.arquivo.url }}"><img src="{{ imagem.arquivo.url }}" width="60px" height="60px"></a></li>
               {% endfor %}
             </ul>
-        {% endfor %}
-
-
       </div>      
     </div>
     <!-- /Galeria -->

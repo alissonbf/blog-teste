@@ -3053,3 +3053,507 @@ IOError: cannot identify image file <File: C:\Users\aliss_000\projetos\blog-test
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Not Found: /blog/
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media/hinata-sets-off-some-fireworks/hinata-sets-off-some-fireworks.m3u8
+Not Found: /media
+Not Found: /favicon.ico
+Not Found: /media/hinata-sets-off-some-fireworks
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_thumbnail.jpg
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_thumbnail.jpg
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_thumbnail.png
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_thumbnail.jpg
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+AttributeError: 'S3BotoStorage' object has no attribute 'isfile'
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_thumbnail.jpg
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_thumbnail.jpg
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /favicon.ico
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd-4_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd-4_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd-4_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd-4_medium.jpg
+Not Found: /media/_versions/naruto_sd-4_big.jpg
+Not Found: /media/_versions/naruto_sd-4_small.jpg
+Not Found: /media/_versions/naruto_sd-4_large.jpg
+Not Found: /media/_versions/naruto_sd-4_admin_thumbnail.jpg
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_1_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd___hinata_road_to_ninja_by_axcell1ben-d57ac_admin_thumbnail.png
+Not Found: /media/_versions/naruto-sd-powerful-shippuden-art-02_admin_thumbnail.png
+Not Found: /media/_versions/naruto_sd_1_admin_thumbnail.jpg
+Not Found: /media/_versions/thumb_naruto-sd-powerful-shippuden-002-flv_admin_thumbnail.jpg
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+AttributeError: 'S3BotoStorage' object has no attribute 'isfile'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+AttributeError: 'S3BotoStorage' object has no attribute 'isfile'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+AttributeError: 'S3BotoStorage' object has no attribute 'isfile'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\filebrowser\templatetags\fb_versions.py", line 49, in render
+    raise e
+AttributeError: 'S3BotoStorage' object has no attribute 'isfile'
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Not Found: /favicon.ico
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 34, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'fb_versions' is not a valid tag library: Template library fb_versions not found, tried django.templatetags.fb_versions,grappelli.dashboard.templatetags.fb_versions,grappelli.templatetags.fb_versions,django.contrib.admin.templatetags.fb_versions,django.contrib.staticfiles.templatetags.fb_versions
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 37, in decorator
+    if get_path('', site=site) is None:
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 20, in get_path
+    if path.startswith('.') or os.path.isabs(path) or not site.storage.isdir(os.path.join(site.directory, path)):
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 214, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'S3BotoStorage' object has no attribute 'isdir'
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 35, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'fb_versions' is not a valid tag library: Template library fb_versions not found, tried django.templatetags.fb_versions,grappelli.dashboard.templatetags.fb_versions,grappelli.templatetags.fb_versions,django.contrib.admin.templatetags.fb_versions,django.contrib.staticfiles.templatetags.fb_versions
+Internal Server Error: /galeria/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\galeria\views.py", line 35, in galeria
+    return render_to_response('galeria/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 806, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 806, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'version', expected 'empty' ou 'endfor'

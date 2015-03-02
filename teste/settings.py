@@ -29,7 +29,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-LOCAL = True # Marca se o projeto esta em desenvolvimento
+LOCAL = False # Marca se o projeto esta em desenvolvimento
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,7 +40,8 @@ INSTALLED_APPS = (
     # Pacotes de terceiros
     'grappelli.dashboard',
     'grappelli',
-    'filebrowser',
+    #'filebrowser',
+    'storages',
 
     # Pacotes do django
     'django.contrib.admin',
@@ -117,6 +118,27 @@ LOGIN_REDIRECT_URL  = '/'
 LOGIN_URL           = '/entrar/'
 LOGOUT_URL          = '/sair/'
 
+# Configuração do Boto
+AWS_STORAGE_BUCKET_NAME = 'heimdallbucket'
+AWS_ACCESS_KEY_ID = 'AKIAJP4KLR4HYQEYCUOQ'
+AWS_SECRET_ACCESS_KEY = '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'
+
+# Tell django-storages that when coming up with the URL for an item in S3 storage, keep
+# it simple - just use this domain plus the path. (If this isn't set, things get complicated).
+# This controls how the `static` template tag from `staticfiles` gets expanded, if you're using it.
+# We also use it in the next setting.
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+# This is used by the `static` template tag from `static`, if you're using that. Or if anything else
+# refers directly to STATIC_URL. So it's safest to always set it.
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+
+# Tell the staticfiles app to use S3Boto storage when writing the collected static files (when
+# you run `collectstatic`).
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
@@ -125,12 +147,10 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
 
 STATICFILES_DIRS = (
-    ('site',os.path.join(PROJECT_PATH, 'sitestatic')),
+    ('site', os.path.join(PROJECT_PATH, 'sitestatic')),
 )
 
 # Arquivos enviados pelo usuario via upload
@@ -142,7 +162,7 @@ MEDIA_URL = '/media/'
 # Localização dos templates do projeto
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_PATH, 'templates')
+    os.path.join(PROJECT_PATH, 'templates'),
 )
 
 # Configuração do Grappelli
@@ -150,6 +170,7 @@ GRAPPELLI_ADMIN_TITLE = "Blog Teste"
 GRAPPELLI_INDEX_DASHBOARD = 'teste.somefile.CustomIndexDashboard'
 
 # Configuração do File Browser
+"""
 FILEBROWSER_VERSIONS_BASEDIR = '_versions'
 FILEBROWSER_DIRECTORY = 'uploads/'
 FILEBROWSER_EXTENSIONS = {
@@ -170,6 +191,7 @@ from filebrowser.sites import site
 from teste.actions import make_monochrome, flv_to_mp4
 site.add_action(make_monochrome)
 site.add_action(flv_to_mp4)
+"""
 
 # Configuração de logs
 LOGGING = {
