@@ -18,6 +18,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
+
+try:
+    import teste.local_settings as local_settings_module
+    lsettings = local_settings_module.settings
+except:
+    lsettings = {}
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -25,13 +32,14 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'n$u6)vg7q=-)i31ah@t@r_+l3+7qberihrvi$tgu28!!i@c=kr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-TEMPLATE_DEBUG = True
+DEBUG = lsettings.get('DEBUG', True)
 
-LOCAL = False # Marca se o projeto esta em desenvolvimento
+LOCAL = lsettings.get('LOCAL', False) # Marca se o projeto esta em desenvolvimento
 
-ALLOWED_HOSTS = ['*']
+TEMPLATE_DEBUG = lsettings.get('TEMPLATE_DEBUG', True)
+
+ALLOWED_HOSTS = lsettings.get('ALLOWED_HOSTS', ['*'])
 
 
 # Application definition
@@ -90,8 +98,8 @@ WSGI_APPLICATION = 'teste.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'blog_db.sqlite3'),
+        'ENGINE': lsettings.get('DEFAULT_DB_ENGINE', 'django.db.backends.sqlite3'),
+        'NAME': lsettings.get('DEFAULT_DB_NAME', os.path.join(BASE_DIR, 'blog_db.sqlite3')),
     }
 }
 
@@ -119,25 +127,25 @@ LOGIN_URL           = '/entrar/'
 LOGOUT_URL          = '/sair/'
 
 # Configuração do Boto
-AWS_STORAGE_BUCKET_NAME = 'heimdallbucket'
-AWS_ACCESS_KEY_ID = 'AKIAJP4KLR4HYQEYCUOQ'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = lsettings.get('AWS_STORAGE_BUCKET_NAME', '')
+AWS_ACCESS_KEY_ID = lsettings.get('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = lsettings.get('AWS_SECRET_ACCESS_KEY', '')
 
 # Tell django-storages that when coming up with the URL for an item in S3 storage, keep
 # it simple - just use this domain plus the path. (If this isn't set, things get complicated).
 # This controls how the `static` template tag from `staticfiles` gets expanded, if you're using it.
 # We also use it in the next setting.
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_CUSTOM_DOMAIN = lsettings.get('AWS_S3_CUSTOM_DOMAIN', '')
 
 # This is used by the `static` template tag from `static`, if you're using that. Or if anything else
 # refers directly to STATIC_URL. So it's safest to always set it.
-STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+STATIC_URL = lsettings.get('STATIC_URL', '')
 
 # Tell the staticfiles app to use S3Boto storage when writing the collected static files (when
 # you run `collectstatic`).
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+STATICFILES_STORAGE = lsettings.get('STATICFILES_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = lsettings.get('DEFAULT_FILE_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
