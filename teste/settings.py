@@ -68,6 +68,7 @@ INSTALLED_APPS = (
     'pycard',
     'haystack',
     'whoosh',
+    'djcelery',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -185,6 +186,17 @@ HAYSTACK_CONNECTIONS = {
         'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
     },
 }
+
+#Celery Config
+BROKER_URL = lsettings.get('BROKER_URL', 'redis://127.0.0.1:6379/0')
+BROKER_TRANSPORT = lsettings.get('BROKER_TRANSPORT', 'redis')
+CELERYBEAT_SCHEDULER = lsettings.get('CELERYBEAT_SCHEDULER', 'djcelery.schedulers.DatabaseScheduler')
+# needed for worker monitoring
+CELERY_SEND_EVENTS = lsettings.get('CELERY_SEND_EVENTS', True)
+
+#Celerycam fix
+import djcelery
+djcelery.setup_loader()
 
 # Configuração do File Browser
 """
