@@ -19,6 +19,7 @@ Criação         Atualização
 ==============  ==================
 
 """
+import json
 
 from model_mommy import mommy
 
@@ -86,14 +87,12 @@ class PostTestCase(TestCase):
         post = mommy.make(Post, _quantity=5)
         self.assertEquals(Post.objects.count(), 5)
 
-
     def testRecipe(self):
         """
             Testa o Recipe do model mommy
         """
         post = mommy.make_recipe('blog.post_tecnologia')
         self.assertEquals(post.titulo, "Será? Diretor do Google diz que a Internet vai desaparecer",)
-
 
     def testObjetosCreated(self):
         """ Caso de Teste: Cadastro de Usuarios e Post """
@@ -148,3 +147,11 @@ class PostTestCase(TestCase):
         test_senha = FormUser(data=senha)
         self.assertEqual(test_senha.errors['confirme_a_senha'],[u'Confirmacao de senha não confere!'])
 
+    def testAllPostsView(self):
+        """
+            Testa o retorno da view all_posts
+        """
+        mommy.make(Post)
+        response = self.client.get(reverse('all_posts'), content_type="application/json")
+        resposta = json.loads(response.content)
+        self.assertEquals(resposta['status'], "success")

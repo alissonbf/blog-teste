@@ -21,7 +21,6 @@ Criação         Atualização
 """
 import smtplib
 
-
 from django.conf import settings
 
 from boto.s3.connection import S3Connection
@@ -37,9 +36,14 @@ from django.contrib.auth.models     import User
 from django.contrib.auth.decorators import login_required
 
 from django.core.paginator      import Paginator, EmptyPage, PageNotAnInteger
+from django.views.decorators.csrf import csrf_exempt
+
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 from models     import Post
-
+from serializers import PostSerializer
 from forms      import FormUser, FormPost
 
 def home(request):
@@ -103,6 +107,65 @@ def enviar_email(request):
 
     return render_to_response('blog/email.html',locals(),context_instance=RequestContext(request),)
 
+@api_view(['GET', 'POST'])
+def all_posts(request):
+    """ Retorna um json com todos os post cadastrados """
+
+    response = {
+        "status": "failure",
+    }
+
+    if request.method == 'GET':
+        posts = Post.objects.all()
+        serializer = PostSerializer(posts, many=True)
+        response = {
+            "status": "success",
+            "shows": serializer.data,
+        }
+        return Response(response)
+
+    elif request.method == 'POST':
+        serializer = PostSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            response = {
+                "status": "success",
+                "shows": serializer.data,
+            }
+            return Response(response, status=status.HTTP_201_CREATED)
+        response = {
+            "status": "failure",
+            "errors": serializer.errors,
+        }
+        return Response(response, status=status.HTTP_400_BAD_REQUEST)
+
+    return Response(response)
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def get_post(request, pk):
+    """ Realiza as operações de select, update e delete no post dono da pk """
+
+    try:
+        post = Post.objects.get(pk=pk)
+    except Post.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = PostSerializer(post)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = PostSerializer(post, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        post.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
 def video(request):
     """
         Retorna um objeto HttpResponse, com o conteudo de um arquivo .m3u8, seguindo os padrões do HLS
@@ -140,3 +203,5 @@ def video(request):
     response = HttpResponse(string, content_type='application/x-mpegURL')
     response['Content-Disposition'] = 'attachment; filename="index.m3u8"'
     return response
+
+

@@ -59,16 +59,19 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Pacotes alisson
-    'blog',
-    'card',
-    'galeria',
-
     # Pacotes de terceiros
     'pycard',
     'haystack',
     'whoosh',
     'djcelery',
+    'rest_framework',
+
+    # Pacotes alisson
+    'blog',
+    'card',
+    'galeria',
+    'apple',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -193,6 +196,11 @@ BROKER_TRANSPORT = lsettings.get('BROKER_TRANSPORT', 'redis')
 CELERYBEAT_SCHEDULER = lsettings.get('CELERYBEAT_SCHEDULER', 'djcelery.schedulers.DatabaseScheduler')
 # needed for worker monitoring
 CELERY_SEND_EVENTS = lsettings.get('CELERY_SEND_EVENTS', True)
+
+# Apple Config
+APPLE_SHARED_SECRET = lsettings.get('APPLE_SHARED_SECRET', '')
+APPLE_SANDBOX_STORE = lsettings.get('APPLE_SANDBOX_STORE', 'https://sandbox.itunes.apple.com/verifyReceipt')
+APPLE_LIVE_STORE = lsettings.get('APPLE_LIVE_STORE', 'https://buy.itunes.apple.com/verifyReceipt')
 
 #Celerycam fix
 import djcelery

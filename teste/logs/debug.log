@@ -4200,3 +4200,87 @@ TypeError: type object argument after ** must be a mapping, not str
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+Internal Server Error: /blog/all-posts/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\rest_framework\response.py", line 45, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+Not Found: /favicon.ico
+Not Found: /blog/get-post&pk=1
+Not Found: /blog/get-post/&pk=1
+Not Found: /blog/get-post/1/
+Not Found: /blog/all-post
+Not Found: /apple/validar_receipt
+Not Found: /apple/validar_receipt/
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 77, in validar_receipt
+    "status": status_request,
+UnboundLocalError: local variable 'status_request' referenced before assignment
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 79, in validar_receipt
+    "sessionid": sessionid,
+UnboundLocalError: local variable 'sessionid' referenced before assignment
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 77, in validar_receipt
+    "status": status_request,
+UnboundLocalError: local variable 'status_request' referenced before assignment
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 77, in validar_receipt
+    "status": status_request,
+UnboundLocalError: local variable 'status_request' referenced before assignment
