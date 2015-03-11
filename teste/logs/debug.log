@@ -4284,3 +4284,58 @@ Traceback (most recent call last):
   File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 77, in validar_receipt
     "status": status_request,
 UnboundLocalError: local variable 'status_request' referenced before assignment
+Not Found: /apple/send-sms/hello word/0153898109756/01511951652598
+Not Found: /apple/send-sms/hello word/0153898109756/01511951652598/
+Not Found: /apple/send-sms/hello word/0153898109756/01511951652598/
+Not Found: /apple/send-sms/hello word/
+Internal Server Error: /apple/send-sms/hell/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: send_sms() takes exactly 4 arguments (2 given)
+Not Found: /apple/send-sms/hello-word/+0153898109756/+01511951652598/
+Internal Server Error: /apple/send-sms/hello-word/0153898109756/01511951652598/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 30, in <module>
+    from sendsms import api
+ImportError: No module named sendsms
+Not Found: /apple/send-sms/hello-word/0153898109756/01511951652598/
+Internal Server Error: /apple/send-sms/hello-word/0153898109756/01511951652598/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 113, in send_sms
+    message.send()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\sendsms\message.py", line 37, in send
+    res = self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\sendsms\backends\smspubli.py", line 127, in send_messages
+    res = self._send(message)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\sendsms\backends\smspubli.py", line 84, in _send
+    response = requests.post(SMSPUBLI_API_URL, params)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 99, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 49, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 461, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 431, in send
+    raise SSLError(e, request=request)
+SSLError: hostname 'secure.gateway360.com' doesn't match 'api.gateway360.com'

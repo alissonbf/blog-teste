@@ -206,6 +206,8 @@ APPLE_LIVE_STORE = lsettings.get('APPLE_LIVE_STORE', 'https://buy.itunes.apple.c
 import djcelery
 djcelery.setup_loader()
 
+SENDSMS_BACKEND = 'sendsms.backends.smspubli.SmsBackend'
+
 # Configuração do File Browser
 """
 FILEBROWSER_VERSIONS_BASEDIR = '_versions'

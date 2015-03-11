@@ -18,12 +18,18 @@ Criação         Atualização
 05/03/2015      05/03/2015
 ==============  ==================
 
+**Metodos**
+
 """
 import urllib2
 import json
 
+from django.shortcuts   import redirect
+
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+
+from sendsms.message import SmsMessage
 
 from teste import settings
 
@@ -95,3 +101,18 @@ def validar_receipt(request):
     return Response(response)
 
 
+def send_sms(request, msg, from_phone, to_phone):
+    """
+    Envia um sms para um celular
+    :param request: requisição http
+    :param msg: mensagem
+    :param from_phone: celular remetente
+    :param to_phone: celular destinatario
+    :return:
+    """
+
+    message = SmsMessage(body=msg, from_phone=from_phone, to=[to_phone])
+    message.send()
+
+
+    return redirect('home')

@@ -1,4 +1,27 @@
 # -*- coding: utf-8 -*-
+"""
+-----
+Tests
+-----
+
+Arquivo de tests da aplicação apple
+
+Autores:
+
+* Alisson Barbosa Ferreira <alissonbf@hotmail.com>
+
+Data:
+
+==============  ==================
+Criação         Atualização
+==============  ==================
+05/03/2015      05/03/2015
+==============  ==================
+
+**Classes**
+
+"""
+
 import json
 
 from model_mommy import mommy

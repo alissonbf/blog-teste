@@ -1,4 +1,26 @@
 # -*- coding: utf-8 -*-
+"""
+--------
+AppleApi
+--------
+
+Arquivo de configuração dos metodos para interação com a api da apple
+
+Autores:
+
+* Alisson Barbosa Ferreira <alissonbf@hotmail.com>
+
+Data:
+
+==============  ==================
+Criação         Atualização
+==============  ==================
+05/03/2015      05/03/2015
+==============  ==================
+
+**Metodos**
+
+"""
 import hashlib
 import time
 

@@ -4,7 +4,7 @@
 Models
 ------
 
-Arquivo de configuração das modelos da aplicação blog
+Arquivo de configuração dos modelos da aplicação blog
 
 Autores: 
 
@@ -17,6 +17,8 @@ Criação         Atualização
 ==============  ==================
 29/11/2014      29/11/2014
 ==============  ==================
+
+**Classes**
 
 """
 from django.db import models

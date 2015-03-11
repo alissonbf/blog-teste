@@ -24,6 +24,8 @@ Criação         Atualização
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
+from django.views.generic import TemplateView
+
 admin.autodiscover()
 
 # configuração dos arquivos estaticos
@@ -50,6 +52,7 @@ urlpatterns = patterns('',
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),
 
     url(r'^search/', include('haystack.urls')),
+    url(r'^blog-teste-doc/$', TemplateView.as_view(template_name='grp_doc/change_form.html'), name="blog_teste_doc_index"),
 )
 
 if settings.LOCAL:
