@@ -47,6 +47,7 @@ urlpatterns = patterns('',
     url(r'^card-credit/', include('card.urls')),
     url(r'^galeria/', include('galeria.urls')),
     url(r'^apple/', include('apple.urls')),
+    url(r'^efeito/', include('efeito.urls')),
 
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),

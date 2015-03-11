@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+
+  <style>
+  .column {
+    width: 170px;
+    float: left;
+    padding-bottom: 100px;
+  }
+  .portlet {
+    margin: 0 1em 1em 0;
+    padding: 0.3em;
+  }
+  .portlet-header {
+    padding: 0.2em 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+  }
+  .portlet-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+  }
+  .portlet-content {
+    padding: 0.4em;
+  }
+  .portlet-placeholder {
+    border: 1px dotted black;
+    margin: 0 1em 1em 0;
+    height: 50px;
+  }
+  </style>
+
+{% endblock %}
+
+{% block extrajs %}
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $( "#sortable" ).sortable({
+              update: function( event, ui ) {
+                   new_order = $(this).sortable( "toArray" );
+                    $.post('/efeito/drag-and-drop/',JSON.stringify(new_order), function( data ) {
+                      console.log( data );
+                    }, "json");
+                   /*
+                   $.ajax({
+                        url: '/efeito/drag-and-drop/',
+                        type: 'POST',
+                        dataType: 'json',
+                        data:new_order,
+                        contentType: 'application/json; charset=utf-8',
+                        success: function(result) {
+                            console.log( result );
+                        }
+                    });
+                    */
+                  }
+            });
+            $( "#sortable" ).disableSelection();
+          });
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="large-12 large-centered columns">
+            <h3>Organizar <small>arraste e solte os itens para organiza-los</small></h3>
+            <ul class="clearing-thumbs" id="sortable">
+                {% for foto in fotos %}
+                    <li class="img-thumb" id="{{ foto.id }}">
+                        <img src="{{ foto.img }}">
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

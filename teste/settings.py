@@ -71,6 +71,7 @@ INSTALLED_APPS = (
     'card',
     'galeria',
     'apple',
+    'efeito',
 
 )
 
