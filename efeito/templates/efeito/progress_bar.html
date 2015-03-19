@@ -9,13 +9,39 @@
     <script>
         $(document).ready(function(){
             $('#uploadForm').ajaxForm({
+                beforeSubmit: function(arr, $form, options) {
+                    $(".meter").css("width", "0%");
+                    $("#error-form").empty();
+                },
                 uploadProgress: function(event, position, total, percentComplete) {
+                    $(".meter").css("width", "0%");
                     var percentVal = percentComplete + '%';
                     $(".meter").css("width", percentVal);
                     console.log(percentVal);
                 },
+                success: function(data) {
+                    if(data['error']){
+                        $(".meter").css("width", "0%");
+
+                        for(i=0; i < data['msg']['file'].length; i++){
+                            var error = data['msg']['file'][i];
+                            console.log(error);
+                            $("#error-form").append("<small class='error'>"+error+"</small>");
+                        }
+                    }
+                }
             });
         });
+
+        function clean_error(){
+            $("#error-form").empty();
+        }
+
+        function close_modal(){
+            $('#myModal').foundation('reveal', 'close');
+        }
+
+
     </script>
 {% endblock %}
 
@@ -36,14 +62,25 @@
                   </fieldset>
                   <div class="row">
                     <div class="large-12 columns">
-                      <input type="submit"class="button right" value="Enviar"/>
+                      <!--<input type="submit" class="button right" value="Enviar"/>-->
+                        <a href="javascript:;" data-reveal-id="myModal" onclick="clean_error();" class="button right">Enviar</a>
                     </div>
                   </div>
-            </form>
 
-            <div class="radius progress success large-12">
-              <span class="meter" style="width: 0%"></span>
-            </div>
+                    <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                        <h2 id="modalTitle">Configuração</h2>
+                        <p class="lead">Você  ter certeza que deseja salvar este arquivo?</p>
+
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+
+                        <div id="progress-bar" class="radius progress success large-12">
+                          <span class="meter" style="width: 0%"></span>
+                        </div>
+                        <div id="error-form"></div>
+                        <button type="submit" onclick="close_modal();" class="button alert right">Fechar</button>
+                        <button type="submit" onclick="$('#uploadForm').submit();" class="button success left">Sim</button>
+                    </div>
+            </form>
         </div>
     </div>
 {% endblock %}

@@ -55,7 +55,7 @@ class Arquivo(models.Model):
         verbose_name = u'Arquivo'
         verbose_name_plural = u'Arquivos'
 
-    file      = models.FileField('File', null=False, blank=False, upload_to='efeito/arquivos')
+    file      = models.FileField(u'File', null=False, blank=False, upload_to='efeito/arquivos')
 
     created_on = models.DateTimeField(u'Criado em', auto_now_add=True)
     updated_on = models.DateTimeField(u'Atualizado em', auto_now=True)

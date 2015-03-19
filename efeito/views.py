@@ -52,6 +52,10 @@ def progress_bar(request):
         form = FormArquivo(request.POST, request.FILES)
         if form.is_valid():
             arquivo = form.save()
+            return JsonResponse({"msg": form.errors, "error": False})
+        else:
+            return JsonResponse({"msg": form.errors, "error": True})
+
     else:
         form = FormArquivo()
 
