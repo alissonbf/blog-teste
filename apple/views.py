@@ -29,8 +29,6 @@ from django.shortcuts   import redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
-from sendsms.message import SmsMessage
-
 from teste import settings
 
 from appleapi import get_sessionid

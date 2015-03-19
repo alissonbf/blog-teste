@@ -1,5 +1,5 @@
-{% load static from staticfiles %}
 <!doctype html>
+{% load static from staticfiles %}
 <html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
@@ -11,35 +11,61 @@
   </head>
   <body>
     <!--Header-->
-    <div class="row">
-      <div class="large-3 columns">        
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
             {% if user.is_authenticated %}
-              <h4><a href="{% url 'home' %}">Olá, {{ user.first_name }}</a></h4>
+                <h1><a href="{% url 'home' %}">Olá, {{ user.first_name }}</a></h1>
             {% else %}
-              <h4><a href="{% url 'home' %}">Blog</a></h4>
-            {% endif %}                             
-      </div>
-      <div class="large-9 columns">
-        <ul class="inline-list right">
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'post' %}">Criar Post's</a></li>
-            <li><a href="{% url 'card' %}">Criar Cartão de Crédito</a></li>
-            <li><a href="{% url 'usuario' %}">Criar Usuario</a></li>
-            <li><a href="{% url 'galeria' %}">Galerias</a></li>
-            <li><a href="{% url 'drag_and_drop' %}">Ordenação</a></li>
-            <li><a href="/search/">Busca</a></li>
-            <li><a href="{% url 'video' %}">Video</a></li>
-            {% if user.is_authenticated %}
-              <li><a href="/sair/">Sair</a></li>              
-            {% else %}
-              <li><a href="/entrar/">Entrar</a></li>
-            {% endif %}           
-        </ul>
-      </div>
-    </div>
+                <h1><a href="{% url 'home' %}">Projeto Teste</a></h1>
+            {% endif %}
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="/search/">Busca</a></li>
+                <li class="has-dropdown">
+                <a href="#">Blog</a>
+                <ul class="dropdown">
+                    <li><a href="{% url 'post' %}">Criar Post's</a></li>
+                    <li><a href="{% url 'card' %}">Criar Cartão de Crédito</a></li>
+                    <li><a href="{% url 'usuario' %}">Criar Usuario</a></li>
+                    <li><a href="{% url 'video' %}">Video</a></li>
+                </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Galeria</a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'galeria' %}">Fotos</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Efeitos</a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'drag_and_drop' %}">Ordenação</a></li>
+                        <li><a href="{% url 'progress_bar' %}">Barra de Progresso</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+                {% if user.is_authenticated %}
+                  <li><a href="/sair/">Sair</a></li>
+                {% else %}
+                  <li><a href="/entrar/">Entrar</a></li>
+                {% endif %}
+            </ul>
+          </section>
+        </nav>
     <!--/Header-->
     
     <!--Conteudo-->
+    <br />
     {% block content %}{% endblock %}        
     <!--/Conteudo-->
 

@@ -25,4 +25,5 @@ from django.conf.urls import patterns, url
 
 urlpatterns = patterns('efeito.views',
     url(r'drag-and-drop/$', 'drag_and_drop', name='drag_and_drop'),
+    url(r'progress-bar/$', 'progress_bar', name='progress_bar'),
 )

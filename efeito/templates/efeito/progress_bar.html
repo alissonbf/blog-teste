@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block extracss %} {% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'site/js/jquery.form.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            $('#uploadForm').ajaxForm({
+                uploadProgress: function(event, position, total, percentComplete) {
+                    var percentVal = percentComplete + '%';
+                    $(".meter").css("width", percentVal);
+                    console.log(percentVal);
+                },
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="large-12 large-centered columns">
+            <h3>Barra de Progresso <small>cadastro com barra de progresso</small></h3>
+
+            <form id="uploadForm" action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                  <fieldset>
+                    <legend>Upload</legend>
+                    <label>{{ form.file }}</label>
+                      {% if form.file.errors %}
+                          {% for error in form.file.errors %}
+                            <small class="error">{{ error }}</small>
+                          {% endfor %}
+                      {% endif %}
+                  </fieldset>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <input type="submit"class="button right" value="Enviar"/>
+                    </div>
+                  </div>
+            </form>
+
+            <div class="radius progress success large-12">
+              <span class="meter" style="width: 0%"></span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

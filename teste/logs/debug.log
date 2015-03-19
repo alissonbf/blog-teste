@@ -4813,3 +4813,148 @@ Traceback (most recent call last):
   File "C:\Users\aliss_000\projetos\blog-teste\efeito\views.py", line 45, in drag_and_drop
     foto = Foto.objects.get(pk=id).update(ordem=ordem)
 AttributeError: 'Foto' object has no attribute 'update'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 64, in home
+    return render_to_response('blog/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 32, in <module>
+    from sendsms.message import SmsMessage
+ImportError: No module named sendsms.message
+Internal Server Error: /efeito/progress-bar/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\efeito\views.py", line 50, in progress_bar
+    return render_to_response('efeito/progress_bar.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: efeito/progress_bar.html
+Internal Server Error: /efeito/progress-bar/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\efeito\views.py", line 50, in progress_bar
+    return render_to_response('efeito/progress_bar.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 162, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 201, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 175, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 288, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 343, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+Internal Server Error: /efeito/progress-bar/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\efeito\views.py", line 50, in progress_bar
+    return render_to_response('efeito/progress_bar.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 162, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 201, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 175, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 288, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 343, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+Forbidden (CSRF token missing or incorrect.): /efeito/progress-bar/

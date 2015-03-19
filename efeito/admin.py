@@ -23,12 +23,19 @@ Criação         Atualização
 ---------------
 """
 from django.contrib     import admin
-from models             import Foto
+from models             import Foto, Arquivo
 
 class AdminFoto(admin.ModelAdmin):
     """
         Configuração do formulario e exibição das informações no admin do django
     """
     list_display    = ('admin_image', 'ordem', 'created_on', 'updated_on',)
-    
+
+class AdminArquivo(admin.ModelAdmin):
+    """
+        Configuração do formulario e exibição das informações no admin do django
+    """
+    list_display    = ('__unicode__', 'created_on', 'updated_on',)
+
 admin.site.register(Foto, AdminFoto)
+admin.site.register(Arquivo, AdminArquivo)

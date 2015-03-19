@@ -26,6 +26,7 @@ from django.shortcuts   import render_to_response
 from django.template    import RequestContext
 
 from models import Foto
+from forms import FormArquivo
 
 @csrf_exempt
 def drag_and_drop(request):
@@ -44,3 +45,14 @@ def drag_and_drop(request):
     return render_to_response('efeito/index.html', locals(), context_instance=RequestContext(request),)
 
 
+def progress_bar(request):
+    """ Cadastro com barra de progresso """
+
+    if request.method == 'POST':
+        form = FormArquivo(request.POST, request.FILES)
+        if form.is_valid():
+            arquivo = form.save()
+    else:
+        form = FormArquivo()
+
+    return render_to_response('efeito/progress_bar.html', locals(), context_instance=RequestContext(request),)

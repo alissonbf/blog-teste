@@ -146,13 +146,13 @@ AWS_S3_CUSTOM_DOMAIN = lsettings.get('AWS_S3_CUSTOM_DOMAIN', '')
 
 # This is used by the `static` template tag from `static`, if you're using that. Or if anything else
 # refers directly to STATIC_URL. So it's safest to always set it.
-STATIC_URL = lsettings.get('STATIC_URL', '')
+STATIC_URL = lsettings.get('STATIC_URL', 'https://heimdallbucket.s3.amazonaws.com/')
 
 # Tell the staticfiles app to use S3Boto storage when writing the collected static files (when
 # you run `collectstatic`).
-STATICFILES_STORAGE = lsettings.get('STATICFILES_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
+#STATICFILES_STORAGE = lsettings.get('STATICFILES_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
 
-DEFAULT_FILE_STORAGE = lsettings.get('DEFAULT_FILE_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
+#DEFAULT_FILE_STORAGE = lsettings.get('DEFAULT_FILE_STORAGE', 'storages.backends.s3boto.S3BotoStorage')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
