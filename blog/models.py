@@ -38,3 +38,15 @@ class Post(models.Model):
 
     def __unicode__(self):
         return self.titulo
+
+class Categoria(models.Model):
+    """ Categoria """
+
+    nome = models.CharField( max_length=30 )
+    parent = models.ForeignKey( 'self', null=True, blank=True, related_name='subcategorias' )
+
+    created_on = models.DateTimeField(u'Criado em', auto_now_add=True)
+    updated_on = models.DateTimeField(u'Atualizado em', auto_now=True)
+
+    def __unicode__(self):
+        return self.nome

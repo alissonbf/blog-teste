@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Construindo auto relacionamento no django | {{ block.super }}{% endblock %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+      <div class="small-2 large-4 columns">
+        <ul class="side-nav">
+            {% for categoria in categorias %}
+                <li><a href="#">{{ categoria.nome }}</a></li>
+                {% for sub in categoria.subcategorias.all %}
+                    <li><a href="#">{{ sub.nome }}</a></li>
+                    {% for subsub in sub.subcategorias.all %}
+                        <li><a href="#">{{ subsub.nome }}</a></li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+{% endblock %}

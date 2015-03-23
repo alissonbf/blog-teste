@@ -5302,3 +5302,211 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
     (lookup_view_s, args, kwargs, len(patterns), patterns))
 NoReverseMatch: Reverse for 'app_list' with arguments '()' and keyword arguments '{u'app_label': ''}' not found. 1 pattern(s) tried: [u'admin/(?P<app_label>djcelery|galeria|auth|blog|card|efeito)/$']
+Internal Server Error: /entrar/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 88, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 88, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'video' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /card-credit/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\card\views.py", line 40, in card
+    return render_to_response('card/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 88, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\test\utils.py", line 88, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'video' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /blog/autorelacionamento/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 178, in autorelacionamento
+    return render_to_response('blog/autorelacionamento.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'RelatedManager' object is not iterable
+Internal Server Error: /blog/autorelacionamento/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 178, in autorelacionamento
+    return render_to_response('blog/autorelacionamento.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'RelatedManager' object is not iterable
+Internal Server Error: /blog/autorelacionamento/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 178, in autorelacionamento
+    return render_to_response('blog/autorelacionamento.html', locals(), context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'RelatedManager' object is not iterable
+Internal Server Error: /blog/autorelacionamento/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 177, in autorelacionamento
+    categorias = Categoria.objects.filter(parents=None)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 691, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 709, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1331, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1358, in _add_q
+    current_negated=current_negated, connector=connector)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1182, in build_filter
+    lookups, parts, reffed_aggregate = self.solve_lookup_type(arg)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1120, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1427, in names_to_path
+    self.raise_field_error(opts, name)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1433, in raise_field_error
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'parents' into field. Choices are: created_on, id, nome, parent, parent_id, subcategorias, updated_on
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png

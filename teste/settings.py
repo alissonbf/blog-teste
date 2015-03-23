@@ -72,7 +72,6 @@ INSTALLED_APPS = (
     'galeria',
     'apple',
     'efeito',
-
 )
 
 MIDDLEWARE_CLASSES = (

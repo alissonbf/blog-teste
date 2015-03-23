@@ -21,7 +21,7 @@ Criação         Atualização
 """
 
 
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('blog.views',
     url(r'^cadastro-usuario/$', 'usuario', name='usuario'),
@@ -31,5 +31,6 @@ urlpatterns = patterns('blog.views',
     url(r'^get-post/(?P<pk>[0-9]+)/$', 'get_post', name='get_post'),
 
     url(r'^enviar-email/$', 'enviar_email', name='enviar_email'),
-    url(r'video/$', 'video', name='video')
+
+    url(r'^autorelacionamento/$', 'autorelacionamento', name='autorelacionamento'),
 )
