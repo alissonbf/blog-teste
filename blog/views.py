@@ -15,33 +15,33 @@ Data:
 ==============  ==================
 Criação         Atualização
 ==============  ==================
-29/11/2014      29/11/2014
+29/11/2014      25/03/2015
 ==============  ==================
 
 """
 import smtplib
 
-from django.conf import settings
 
-from boto.s3.connection import S3Connection
-
-from boto.s3.key import Key
 from django.core import paginator
-from django.http import HttpResponse
 
-from django.shortcuts   import render_to_response,redirect
+from django.shortcuts   import render_to_response
 from django.template    import RequestContext
 
-from django.core.urlresolvers       import reverse
 from django.contrib.auth.models     import User
 from django.contrib.auth.decorators import login_required
 
 from django.core.paginator      import Paginator, EmptyPage, PageNotAnInteger
-from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+
+
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+
+from permissions import IsApi
+from authentication import ApiAuthentication
 
 from models     import Post, Categoria
 from serializers import PostSerializer
@@ -49,7 +49,7 @@ from forms      import FormUser, FormPost
 
 def home(request):
     """ Pagina principal do site """
-    
+
     posts_lista = Post.objects.all().order_by('-created_on')
     
     paginacao   = Paginator(posts_lista, 2)
@@ -142,7 +142,6 @@ def all_posts(request):
 
     return Response(response)
 
-
 @api_view(['GET', 'PUT', 'DELETE'])
 def get_post(request, pk):
     """ Realiza as operações de select, update e delete no post dono da pk """
@@ -166,6 +165,26 @@ def get_post(request, pk):
     elif request.method == 'DELETE':
         post.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+@api_view(['GET', 'POST'])
+@authentication_classes((ApiAuthentication, ))
+@permission_classes((IsApi,))
+def api_auth(request):
+    """
+    Autentica o usuario via rest framework
+    :param request:
+    :return: response<json> - Retorna todos os posts
+    """
+    posts = Post.objects.all()
+    serializer = PostSerializer(posts, many=True)
+    response = {
+        "status": "success",
+        "shows": serializer.data,
+    }
+
+    return Response(response)
+
 
 def autorelacionamento(request):
     """

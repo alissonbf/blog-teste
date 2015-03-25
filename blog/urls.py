@@ -27,8 +27,9 @@ urlpatterns = patterns('blog.views',
     url(r'^cadastro-usuario/$', 'usuario', name='usuario'),
     url(r'^cadastro-post/$', 'post', name='post'),
 
-    url(r'^all-posts', 'all_posts', name='all_posts'),
-    url(r'^get-post/(?P<pk>[0-9]+)/$', 'get_post', name='get_post'),
+    url(r'^api-all-posts', 'all_posts', name='all_posts'),
+    url(r'^api-get-post/(?P<pk>[0-9]+)/$', 'get_post', name='get_post'),
+    url(r'^api-auth', 'api_auth', name='api_auth'),
 
     url(r'^enviar-email/$', 'enviar_email', name='enviar_email'),
 

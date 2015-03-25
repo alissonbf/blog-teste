@@ -5510,3 +5510,375 @@ Not Found: /media/galeria/imagem/naruto_sd.jpg
 Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
 Not Found: /media/galeria/imagem/naruto_sd.jpg
 Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 409, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 340, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Not Found: /favicon.ico
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 390, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 313, in initialize_request
+    authenticators=self.get_authenticators(),
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 228, in get_authenticators
+    return [auth() for auth in self.authentication_classes]
+TypeError: 'type' object is not iterable
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 43, in <module>
+    from permissions import Is0800
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\permissions.py", line 39, in <module>
+    class Is0800(permissions.TokenAuthentication):
+AttributeError: 'module' object has no attribute 'TokenAuthentication'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 57, in home
+    Token.objects.get_or_create(user=user)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 422, in get_or_create
+    return self.get(**lookup), False
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 351, in get
+    num = len(clone)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 122, in __len__
+    self._fetch_all()
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 966, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 265, in iterator
+    for row in compiler.results_iter():
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 700, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: authtoken_token
+Not Found: /blog/
+Not Found: /blog/api-
+Internal Server Error: /blog/api-authaaa
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 171, in <module>
+    @authentication_classes((BasicAuthenticationn, ))
+NameError: name 'BasicAuthenticationn' is not defined
+Internal Server Error: /blog/api-auth-custom
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Python27\lib\site-packages\rest_framework\authentication.py", line 45, in authenticate
+    raise NotImplementedError(".authenticate() must be overridden.")
+NotImplementedError: .authenticate() must be overridden.
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Python27\lib\site-packages\rest_framework\authentication.py", line 45, in authenticate
+    raise NotImplementedError(".authenticate() must be overridden.")
+NotImplementedError: .authenticate() must be overridden.
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Python27\lib\site-packages\rest_framework\authentication.py", line 45, in authenticate
+    raise NotImplementedError(".authenticate() must be overridden.")
+NotImplementedError: .authenticate() must be overridden.
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 325, in initial
+    self.check_permissions(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Python27\lib\site-packages\rest_framework\permissions.py", line 47, in has_permission
+    return request.user and request.user.is_authenticated()
+AttributeError: 'Cliente' object has no attribute 'is_authenticated'
+Internal Server Error: /blog/api-authaaa
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 32, in authenticate
+    user = Cliente.objects.get(pk=1)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 357, in get
+    self.model._meta.object_name)
+DoesNotExist: Cliente matching query does not exist.
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 37, in authenticate
+    return (user, None)
+NameError: global name 'user' is not defined
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 37, in authenticate
+    return (None, None)
+NameError: global name 'user' is not defined
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 37, in authenticate
+    return (None, None)
+NameError: global name 'user' is not defined
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 37, in authenticate
+    return (None, None)
+NameError: global name 'user' is not defined
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 35, in authenticate
+    cliente = Cliente.objects.get(token=auth[1])
+IndexError: list index out of range

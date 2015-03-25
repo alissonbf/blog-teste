@@ -50,3 +50,31 @@ class Categoria(models.Model):
 
     def __unicode__(self):
         return "%s | %s" %(self.parent, self.nome)
+
+
+class Cliente(models.Model):
+    """  Clientes usado na autenticação por token """
+    class Meta:
+        ordering = ['-created_on',]
+        verbose_name = u'Cliente'
+        verbose_name_plural = u'Clientes'
+
+    token       = models.CharField(max_length=40, null=False, blank=False)
+
+    created_on = models.DateTimeField(u'Criado em', auto_now_add=True)
+    updated_on = models.DateTimeField(u'Atualizado em', auto_now=True)
+
+    def __unicode__(self):
+        return self.token
+
+
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from rest_framework.authtoken.models import Token
+
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def create_auth_token(sender, instance=None, created=False, **kwargs):
+    if created:
+        Token.objects.create(user=instance)

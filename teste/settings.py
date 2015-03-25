@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'whoosh',
     'djcelery',
     'rest_framework',
+    'rest_framework.authtoken',
 
     # Pacotes alisson
     'blog',
@@ -207,6 +208,7 @@ import djcelery
 djcelery.setup_loader()
 
 SENDSMS_BACKEND = 'sendsms.backends.smspubli.SmsBackend'
+
 
 # Configuração do File Browser
 """
