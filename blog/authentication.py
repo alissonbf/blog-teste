@@ -19,20 +19,20 @@ Criação         Atualização
 ==============  ==================
 
 """
+import json
 
-from django.contrib.auth.models import User
 from rest_framework import authentication
 from rest_framework import exceptions
-from rest_framework.authentication import get_authorization_header
 
 from models import Cliente
 
 class ApiAuthentication(authentication.BaseAuthentication):
 
     def authenticate(self, request):
-        auth = get_authorization_header(request).split()
+        data = json.loads(request.body)
+
         try:
-            cliente = Cliente.objects.get(token=auth[1])
+            cliente = Cliente.objects.get(token=data['token'])
         except Cliente.DoesNotExist:
             raise exceptions.AuthenticationFailed('No such user')
         except IndexError:

@@ -157,23 +157,3 @@ class PostTestCase(TestCase):
         response = self.client.get(reverse('all_posts'), content_type="application/json")
         resposta = json.loads(response.content)
         self.assertEquals(resposta['status'], "success")
-
-    """
-    def testAuthorizationSuccess(self):
-        user = User.objects.create_user('foo', 'foo@bar.de', 'bar')
-        token = Token.objects.get(user=user).key
-        header = {'HTTP_AUTHORIZATION': 'Token {}'.format(token)}
-        response = self.client.get(reverse('api_auth'), {}, **header)
-        self.assertEqual(response.status_code, 200, response.content)
-
-
-    def testAuthorizationFailure(self):
-        header = {'HTTP_AUTHORIZATION': 'Token {}'.format('asdfasdfasdasdasdf')}
-        response = self.client.get(reverse('api_auth'), {}, **header)
-        self.assertEqual(response.status_code, 401, response.content)
-    """
-    def testAuthorizationCustomSuccess(self):
-        cliente = mommy.make(Cliente)
-        header = {'HTTP_AUTHORIZATION': 'Token {}'.format(cliente.token)}
-        response = self.client.get(reverse('api_auth'), {}, **header)
-        self.assertEqual(response.status_code, 20, response.content)

@@ -24,8 +24,8 @@ from rest_framework import permissions
 
 class IsApi(permissions.BasePermission):
     """
-    Custom permission to only allow owners of an object to edit it.
+    Permite livre acesso para todos os usuarios autenticados
     """
 
     def has_permission(self, request, view):
-        return False
+        return True

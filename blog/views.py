@@ -19,8 +19,10 @@ Criação         Atualização
 ==============  ==================
 
 """
+import os
 import smtplib
-
+import json
+import binascii
 
 from django.core import paginator
 
@@ -35,15 +37,14 @@ from django.core.paginator      import Paginator, EmptyPage, PageNotAnInteger
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
-
-
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 from permissions import IsApi
 from authentication import ApiAuthentication
+from api_apple import get_apple_validate
 
-from models     import Post, Categoria
+from models     import Post, Categoria, Cliente
 from serializers import PostSerializer
 from forms      import FormUser, FormPost
 
@@ -166,7 +167,6 @@ def get_post(request, pk):
         post.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-
 @api_view(['GET', 'POST'])
 @authentication_classes((ApiAuthentication, ))
 @permission_classes((IsApi,))
@@ -185,6 +185,56 @@ def api_auth(request):
 
     return Response(response)
 
+@api_view(['GET', 'POST'])
+@authentication_classes((TokenAuthentication, SessionAuthentication, BasicAuthentication))
+@permission_classes((IsAuthenticated,))
+def api_token(request):
+    """
+    Autentica o usuario via rest framework
+    :param request:
+    :return: response<json> - Retorna todos os posts
+    """
+    posts = Post.objects.all()
+    serializer = PostSerializer(posts, many=True)
+    response = {
+        "status": "success",
+        "shows": serializer.data,
+    }
+
+    return Response(response)
+
+@api_view(['GET', 'POST'])
+def api_login(request):
+    """
+    Valida a compra com apple e google e cria um token de acesso
+    :param apple_receipt <str>: Recibo de compra da apple
+    :param device <str>: Sistema operacional do aparelho, IOS ou AND
+    :return: response<json> - Retorna o token de acesso
+    """
+    response = {
+        "status": "failure",
+    }
+
+    data = json.loads(request.body)
+
+    if data['device'] == 'IOS':
+        resposta = get_apple_validate(data['apple_receipt'])
+    elif data['device'] == 'AND':
+        resposta = {
+            "status": False,
+        }
+
+    if resposta['status']:
+        cliente = Cliente(token=binascii.hexlify(os.urandom(20)).decode())
+        cliente.save()
+
+        if cliente:
+            response = {
+                "status": "success",
+                "token": cliente.token
+            }
+
+    return Response(response)
 
 def autorelacionamento(request):
     """
