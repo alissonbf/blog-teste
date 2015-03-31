@@ -66,6 +66,8 @@ INSTALLED_APPS = (
     'djcelery',
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_docs',
+    'rest_framework_swagger',
 
     # Pacotes alisson
     'blog',
@@ -73,6 +75,7 @@ INSTALLED_APPS = (
     'galeria',
     'apple',
     'efeito',
+    'google',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -209,6 +212,10 @@ djcelery.setup_loader()
 
 SENDSMS_BACKEND = 'sendsms.backends.smspubli.SmsBackend'
 
+# Configuração do Django Rest Framework
+REST_FRAMEWORK = {
+    'VIEW_DESCRIPTION_FUNCTION': 'rest_framework_swagger.views.get_restructuredtext'
+}
 
 # Configuração do File Browser
 """

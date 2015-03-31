@@ -21,6 +21,10 @@ Criação         Atualização
 **Metodos**
 
 """
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import urllib2
 import json
 
@@ -37,10 +41,23 @@ from appleapi import get_sessionid
 def validar_receipt(request):
     """
     Valida o receipt da apple e retorna uma sessão
-    :param request: Requisição http
-    :param apple_receipt <str>: Recibo de compra da apple
-    :param device <str>: Sistema operacional do aparelho, IOS ou Android
-    :return: response <json>: status da operação, sessionid, mensagem sobre o resultado da operação
+    ---
+    parameters:
+        - name: apple_receipt
+          value: 1111
+          description: Recibo de compra da apple
+          required: true
+          type: string
+          paramType: body
+        - name: device
+          description: Sistema operacional do aparelho, IOS ou Android
+          required: true
+          type: string
+          paramType: body
+
+    responseMessages:
+        - code: 200
+          message: status da operação, sessionid, mensagem sobre o resultado da operação
     """
 
     sessionid = get_sessionid(request)
@@ -50,6 +67,7 @@ def validar_receipt(request):
     }
 
     data = json.loads(request.body)
+
     if data['device'] == 'IOS':
         receipt_data = data['apple_receipt']
         password = settings.APPLE_SHARED_SECRET
@@ -96,6 +114,7 @@ def validar_receipt(request):
             "sessionid": None,
             "message": "Device not IOS"
         }
+
     return Response(response)
 
 

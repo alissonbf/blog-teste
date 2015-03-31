@@ -5916,3 +5916,1476 @@ Traceback (most recent call last):
   File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 231, in api_login
     if cliente:
 UnboundLocalError: local variable 'cliente' referenced before assignment
+Internal Server Error: /blog-teste-doc/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 522, in reverse
+    app_list = resolver.app_dict[ns]
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 329, in app_dict
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import google.views.validar_receipt. View does not exist in module google.views.
+Not Found: /favicon.ico
+Internal Server Error: /blog-teste-doc/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'grp_doc_basic_page_structure' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 52, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 32, in authenticate
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /blog/api-login
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 218, in api_login
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 224, in get_response_serializer_class
+    serializer = self.get_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 215, in get_serializer_class
+    serializer = parser.get_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 862, in get_serializer_class
+    return self._load_class(serializer, callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 852, in _load_class
+    raise Exception("Could not find %s, looked in %s" % (cls_path, module))
+Exception: Could not find .serializers.FooSerializer, looked in <module 'apple.views' from 'C:\Users\aliss_000\projetos\blog-teste\apple\views.py'>
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 224, in get_response_serializer_class
+    serializer = self.get_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 215, in get_serializer_class
+    serializer = parser.get_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 862, in get_serializer_class
+    return self._load_class(serializer, callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 852, in _load_class
+    raise Exception("Could not find %s, looked in %s" % (cls_path, module))
+Exception: Could not find .serializers.FooSerializer, looked in <module 'apple.views' from 'C:\Users\aliss_000\projetos\blog-teste\apple\views.py'>
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 83, in get_operations
+    err=doc_parser.yaml_error)
+  File "C:\Python27\lib\site-packages\django\utils\safestring.py", line 89, in __add__
+    t = super(SafeText, self).__add__(rhs)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 143: ordinal not in range(128)
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 83, in get_operations
+    err=doc_parser.yaml_error)
+  File "C:\Python27\lib\site-packages\django\utils\safestring.py", line 89, in __add__
+    t = super(SafeText, self).__add__(rhs)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 143: ordinal not in range(128)
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 83, in get_operations
+    err=doc_parser.yaml_error)
+  File "C:\Python27\lib\site-packages\django\utils\safestring.py", line 89, in __add__
+    t = super(SafeText, self).__add__(rhs)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 143: ordinal not in range(128)
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 83, in get_operations
+    err=doc_parser.yaml_error)
+  File "C:\Python27\lib\site-packages\django\utils\safestring.py", line 89, in __add__
+    t = super(SafeText, self).__add__(rhs)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 143: ordinal not in range(128)
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 65, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /blog/api-auth
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 274, in perform_authentication
+    request.user
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 272, in user
+    self._authenticate()
+  File "C:\Python27\lib\site-packages\rest_framework\request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\authentication.py", line 32, in authenticate
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 68, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 68, in validar_receipt
+    if data['device'] == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 67, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 68, in validar_receipt
+    if data['device'] == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 68, in validar_receipt
+    if data['device'] == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 224, in get_response_serializer_class
+    serializer = self.get_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 215, in get_serializer_class
+    serializer = parser.get_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 862, in get_serializer_class
+    return self._load_class(serializer, callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 852, in _load_class
+    raise Exception("Could not find %s, looked in %s" % (cls_path, module))
+Exception: Could not find .serializers.PostSerializer, looked in <module 'apple.views' from 'C:\Users\aliss_000\projetos\blog-teste\apple\views.py'>
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 224, in get_response_serializer_class
+    serializer = self.get_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 215, in get_serializer_class
+    serializer = parser.get_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 862, in get_serializer_class
+    return self._load_class(serializer, callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 852, in _load_class
+    raise Exception("Could not find %s, looked in %s" % (cls_path, module))
+Exception: Could not find .serializers.PostSerializer, looked in <module 'apple.views' from 'C:\Users\aliss_000\projetos\blog-teste\apple\views.py'>
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 82, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\rest_framework\response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "C:\Python27\lib\site-packages\rest_framework\renderers.py", line 98, in render
+    separators=separators
+  File "C:\Python27\Lib\json\__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\rest_framework\utils\encoders.py", line 63, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <type 'exceptions.ValueError'> is not JSON serializable
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\rest_framework\response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "C:\Python27\lib\site-packages\rest_framework\renderers.py", line 98, in render
+    separators=separators
+  File "C:\Python27\Lib\json\__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\rest_framework\utils\encoders.py", line 63, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <type 'exceptions.ValueError'> is not JSON serializable
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\rest_framework\response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "C:\Python27\lib\site-packages\rest_framework\renderers.py", line 98, in render
+    separators=separators
+  File "C:\Python27\Lib\json\__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\site-packages\rest_framework\utils\encoders.py", line 63, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <type 'exceptions.TypeError'> is not JSON serializable
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 82, in validar_receipt
+    if data['device'] == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 82, in validar_receipt
+    if str(data['device']) == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 82, in validar_receipt
+    if str(data['device']) == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 83, in validar_receipt
+    if data['device'] == 'IOS':
+TypeError: string indices must be integers
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 81, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 82, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 84, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 85, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 84, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 222, in get_response_serializer_class
+    serializer = parser.get_response_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 898, in get_response_serializer_class
+    serializer = self.object.get('response_serializer', None)
+AttributeError: 'unicode' object has no attribute 'get'
+Internal Server Error: /api-docs/api-docs/apple
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\views.py", line 133, in get
+    'apis': generator.generate(apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 32, in generate
+    'operations': self.get_operations(api, apis),
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 68, in get_operations
+    serializer = self._get_method_serializer(method_introspector)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\docgenerator.py", line 165, in _get_method_serializer
+    serializer = method_inspector.get_response_serializer_class()
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 222, in get_response_serializer_class
+    serializer = parser.get_response_serializer_class(self.callback)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\site-packages\rest_framework_swagger\introspectors.py", line 898, in get_response_serializer_class
+    serializer = self.object.get('response_serializer', None)
+AttributeError: 'unicode' object has no attribute 'get'
+Internal Server Error: /apple/validar-receipt/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python27\lib\site-packages\rest_framework\views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\apple\views.py", line 69, in validar_receipt
+    data = json.loads(request.body)
+  File "C:\Python27\Lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\Lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded

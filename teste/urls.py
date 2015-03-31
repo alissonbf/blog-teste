@@ -48,12 +48,15 @@ urlpatterns = patterns('',
     url(r'^galeria/', include('galeria.urls')),
     url(r'^apple/', include('apple.urls')),
     url(r'^efeito/', include('efeito.urls')),
+    url(r'^google/', include('google.urls')),
 
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),
 
     url(r'^search/', include('haystack.urls')),
     url(r'^blog-teste-doc/$', TemplateView.as_view(template_name='grp_doc/change_form.html'), name="blog_teste_doc_index"),
+    url(r'^rest-api/', include('rest_framework_docs.urls')),
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 )
 
 if settings.LOCAL:

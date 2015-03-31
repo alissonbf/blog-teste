@@ -173,7 +173,7 @@ def get_post(request, pk):
 def api_auth(request):
     """
     Autentica o usuario via rest framework
-    :param request:
+    request -- Requisição Http
     :return: response<json> - Retorna todos os posts
     """
     posts = Post.objects.all()
