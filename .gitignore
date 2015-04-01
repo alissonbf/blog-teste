@@ -1,2 +1,12 @@
 # Created by .ignore support plugin (hsz.mobi)
 teste/local_settings.py
+*.lof
+
+#Ignore Database
+db.sqlite3
+
+#Python Compiled
+*.pyc
+
+#PyCharm Control Files
+.idea
