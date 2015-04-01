@@ -12,7 +12,6 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sphinx_bootstrap_theme
 import sys
 import os
 import shlex
@@ -26,6 +25,7 @@ import shlex
 sys.path.insert(0, os.path.abspath('..'))
 from django.conf import settings
 settings.configure()
+import sphinx_bootstrap_theme
 
 
 # -- General configuration ------------------------------------------------
