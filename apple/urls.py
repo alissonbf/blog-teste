@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-------
+========
 Urls
-------
+========
 
 Arquivo de configuração das urls da aplicação apple
 
@@ -10,7 +10,7 @@ Autores:
 
 * Alisson Barbosa Ferreira <alissonbf@hotmail.com>
     
-Data:
+.. cssclass:: table-bordered
 
 ==============  ==================
 Criação         Atualização

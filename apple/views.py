@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-------
+========
 Views
-------
+========
 
 Arquivo de configuração das views da aplicação apple
 
@@ -10,7 +10,7 @@ Autores:
 
 * Alisson Barbosa Ferreira <alissonbf@hotmail.com>
     
-Data:
+.. cssclass:: table-bordered
 
 ==============  ==================
 Criação         Atualização
@@ -18,7 +18,9 @@ Criação         Atualização
 05/03/2015      05/03/2015
 ==============  ==================
 
-**Metodos**
+-------
+Metodos
+-------
 
 """
 import sys
@@ -120,12 +122,13 @@ def validar_receipt(request):
 
 def send_sms(request, msg, from_phone, to_phone):
     """
-    Envia um sms para um celular
-    :param request: requisição http
-    :param msg: mensagem
-    :param from_phone: celular remetente
-    :param to_phone: celular destinatario
-    :return:
+        Envia um sms para um celular
+
+        :param request: requisição http
+        :param msg: mensagem
+        :param from_phone: celular remetente
+        :param to_phone: celular destinatario
+
     """
 
     message = SmsMessage(body=msg, from_phone=from_phone, to=[to_phone])
