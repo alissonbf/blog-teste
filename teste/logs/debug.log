@@ -7872,3 +7872,663 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\django\template\loader.py", line 136, in find_template
     raise TemplateDoesNotExist(name)
 TemplateDoesNotExist: filebrowser/index.html
+Internal Server Error: /sessao/show-sessao/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/sessao/views.py", line 31, in show_sessao
+    return render_to_response('sessao/show-sessao.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 161, in render
+    values = list(values)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/sessions/backends/base.py", line 49, in __getitem__
+    return self._session[key]
+KeyError: 0
+Internal Server Error: /sessao/show-sessao/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/sessao/views.py", line 34, in show_sessao
+    return render_to_response('sessao/show-sessao.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import api.views.get_all_posts. View does not exist in module api.views.
+Internal Server Error: /sessao/show-sessao/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/sessao/views.py", line 34, in show_sessao
+    return render_to_response('sessao/show-sessao.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import api.views.get_all_posts. View does not exist in module api.views.
+Internal Server Error: /sessao/show-sessao/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/sessao/views.py", line 34, in show_sessao
+    return render_to_response('sessao/show-sessao.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import api.views.get_all_posts. View does not exist in module api.views.
+Internal Server Error: /sessao/show-sessao/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/sessao/views.py", line 34, in show_sessao
+    return render_to_response('sessao/show-sessao.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import api.views.get_all_posts. View does not exist in module api.views.
+Internal Server Error: /api/auth-get-all-posts
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 40, in authenticate
+    data = json.loads(request.body)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/blog/views.py", line 66, in home
+    return render_to_response('blog/index.html',locals(),context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'auth-get-all-posts' with arguments '('',)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['api/auth-get-all-posts/(?P<token>[\\w_-]+)/$']
+Internal Server Error: /api/auth-get-all-posts/04cc7d1bcf735a37abe5313c40ed4468f6891e0c/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 41, in authenticate
+    data = {'token': request.GET['token']}
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /api/auth-get-all-posts/04cc7d1bcf735a37abe5313c40ed4468f6891e0c/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 46, in authenticate
+    cliente = Cliente.objects.get(token=data['token'])
+UnboundLocalError: local variable 'data' referenced before assignment
+Internal Server Error: /api/auth-get-all-posts/04cc7d1bcf735a37abe5313c40ed4468f6891e0c/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 46, in authenticate
+    cliente = Cliente.objects.get(token=data['token'])
+UnboundLocalError: local variable 'data' referenced before assignment
+Internal Server Error: /api/auth-get-all-posts/04cc7d1bcf735a37abe5313c40ed4468f6891e0c/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 41, in authenticate
+    data = {'token': request.GET['token']}
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /api/auth-get-all-posts/04cc7d1bcf735a37abe5313c40ed4468f6891e0c/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 41, in authenticate
+    data = json.loads(request.body)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /api/auth-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 41, in authenticate
+    data = {'token': request.GET['token']}
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /api/auth-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 43, in authenticate
+    data = json.loads(request.body)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /api/auth-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 43, in authenticate
+    data = json.loads(request.body)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Internal Server Error: /api/auth-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 43, in authenticate
+    data = json.loads(request.body)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Not Found: /api/
+Internal Server Error: /api/auth-login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 404, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/api/views.py", line 95, in auth_login
+    request.session['cliente']['token'] = False
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/sessions/backends/base.py", line 49, in __getitem__
+    return self._session[key]
+KeyError: 'cliente'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/blog/views.py", line 66, in home
+    return render_to_response('blog/index.html',locals(),context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 292, in _populate
+    for name in pattern.reverse_dict:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import api.views.auth_logout. View does not exist in module api.views.
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 407, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 395, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 324, in initial
+    self.perform_authentication(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 274, in perform_authentication
+    request.user
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 495, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 272, in user
+    self._authenticate()
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/request.py", line 458, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/planetkids/laboratorio/blog-teste/api/authentication.py", line 64, in authenticate
+    cliente = Cliente.objects.get(token=request.session['cliente']['token'])
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/sessions/backends/base.py", line 49, in __getitem__
+    return self._session[key]
+KeyError: 'cliente'

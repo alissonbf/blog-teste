@@ -52,6 +52,8 @@ urlpatterns = patterns('',
     url(r'^apple/', include('apple.urls')),
     url(r'^efeito/', include('efeito.urls')),
     url(r'^google/', include('google.urls')),
+    url(r'^sessao/', include('sessao.urls')),
+    url(r'^api/', include('api.urls')),
 
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),

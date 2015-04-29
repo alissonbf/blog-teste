@@ -76,6 +76,8 @@ INSTALLED_APPS = (
     'apple',
     'efeito',
     'google',
+    'sessao',
+    'api',
 )
 
 MIDDLEWARE_CLASSES = (

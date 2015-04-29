@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="large-12 large-centered columns">
+            <h3>Sessão <small>variaveis de sessão do django</small></h3>
+            <p>{{ request.session.msg }}</p>
+            <p>User: {{ request.session.user.nome }}</p>
+            <p>Token: {{ request.session.user.token }}</p>
+        </div>
+    </div>
+{% endblock %}

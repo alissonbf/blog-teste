@@ -49,6 +49,22 @@
                         <li><a href="{% url 'progress_bar' %}">Barra de Progresso</a></li>
                     </ul>
                 </li>
+                <li class="has-dropdown">
+                    <a href="#">Sessão</a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'show-sessao' %}">Mostrar Sessão</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Api</a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'get-all-posts' %}">Mostrar Posts</a></li>
+                        <li><a href="{% url 'auth-get-all-posts' %}?token=04cc7d1bcf735a37abe5313c40ed4468f6891e0c">Auth Mostrar Posts</a></li>
+                        <li><a href="{% url 'auth-login' %}?token=04cc7d1bcf735a37abe5313c40ed4468f6891e0c">Login</a></li>
+                        <li><a href="{% url 'auth-session-get-all-posts' %}">Auth Session Posts</a></li>
+                        <li><a href="{% url 'auth-logout' %}">Logout</a></li>
+                    </ul>
+                </li>
                 <li><a href="/search/">Busca</a></li>
                 <li><a href="{% url 'docs' path %}index.html">Docs</a></li>
             </ul>
