@@ -25,6 +25,7 @@ from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
 from django.views.generic import TemplateView
+from django.views.static import serve
 
 admin.autodiscover()
 
@@ -34,6 +35,8 @@ from django.conf import settings
 
 # configuração do filebrowser
 from filebrowser.sites import site
+
+
 
 urlpatterns = patterns('',
     url(r'^admin/filebrowser/', include(site.urls)),
@@ -56,13 +59,14 @@ urlpatterns = patterns('',
     url(r'^search/', include('haystack.urls')),
     url(r'^blog-teste-doc/$', TemplateView.as_view(template_name='grp_doc/change_form.html'), name="blog_teste_doc_index"),
     url(r'^rest-api/', include('rest_framework_docs.urls')),
-    url(r'^docs/', include('rest_framework_swagger.urls')),
+    url(r'^api-docs/', include('rest_framework_swagger.urls')),
+
+    url(r'^docs/(?P<path>.*)', serve, {'document_root': 'docs/_build/html/', 'show_indexes': True}, 'docs'),
 )
 
 if settings.LOCAL:
     urlpatterns += patterns('',
-        url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
-            {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
     )
     
 urlpatterns += staticfiles_urlpatterns()

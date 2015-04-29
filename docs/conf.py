@@ -123,7 +123,7 @@ html_theme = 'bootstrap'
 # documentation.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Blog Teste",
+    'navbar_title': "Documentation",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Docs",
@@ -135,10 +135,9 @@ html_theme_options = {
     #    (name, "http://example.com", True) # arbitrary absolute url
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
-    #'navbar_links': [
-    #    ("Examples", "examples"),
-    #    ("Link", "http://example.com", True),
-    #],
+    'navbar_links': [
+        ("Blog Teste", "http://127.0.0.1:8000/", True),
+    ],
 
     # Render the next and previous page links in navbar. (Default: true)
     'navbar_sidebarrel': True,
@@ -224,7 +223,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    '**': ['localtoc.html', 'sourcelink.html', 'searchbox.html'],
+    '**': ['localtoc.html', 'searchbox.html'],
 }
 
 # Additional templates that should be rendered to pages, maps page names to

@@ -17,7 +17,7 @@
             {% if user.is_authenticated %}
                 <h1><a href="{% url 'home' %}">Olá, {{ user.first_name }}</a></h1>
             {% else %}
-                <h1><a href="{% url 'home' %}">Projeto Teste</a></h1>
+                <h1><a href="{% url 'home' %}">Blog Teste</a></h1>
             {% endif %}
             </li>
              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -27,7 +27,6 @@
           <section class="top-bar-section">
             <!-- Right Nav Section -->
             <ul class="right">
-                <li><a href="/search/">Busca</a></li>
                 <li class="has-dropdown">
                 <a href="#">Blog</a>
                 <ul class="dropdown">
@@ -50,14 +49,17 @@
                         <li><a href="{% url 'progress_bar' %}">Barra de Progresso</a></li>
                     </ul>
                 </li>
+                <li><a href="/search/">Busca</a></li>
+                <li><a href="{% url 'docs' path %}index.html">Docs</a></li>
             </ul>
 
             <!-- Left Nav Section -->
             <ul class="left">
                 {% if user.is_authenticated %}
-                  <li><a href="/sair/">Sair</a></li>
+                    <li><a href="/sair/">Sair</a></li>
+                    <li><a href="/admin/">Django Admin</a></li>
                 {% else %}
-                  <li><a href="/entrar/">Entrar</a></li>
+                    <li><a href="/entrar/">Entrar</a></li>
                 {% endif %}
             </ul>
           </section>

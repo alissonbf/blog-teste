@@ -7389,3 +7389,486 @@ Traceback (most recent call last):
   File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
     raise ValueError("No JSON object could be decoded")
 ValueError: No JSON object could be decoded
+Not Found: /favicon.ico
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 222, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 222, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 222, in resolve
+    kwargs.update(self.default_args)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Not Found: /docs/
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 66, in home
+    return render_to_response('blog/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'docs' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['docs/(?P<path>.*)']
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Not Found: /favicon.ico
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Not Found: /docs/
+Internal Server Error: /index.html
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: 'str' object is not callable
+Internal Server Error: /index.html
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\static.py", line 50, in serve
+    fullpath = os.path.join(document_root, newpath)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 64, in join
+    result_drive, result_path = splitdrive(path)
+  File "C:\Users\aliss_000\virtualenv\blog-teste\lib\ntpath.py", line 114, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'NoneType' has no len()
+Not Found: /docs/
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\aliss_000\projetos\blog-teste\blog\views.py", line 66, in home
+    return render_to_response('blog/index.html',locals(),context_instance=RequestContext(request),)
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'docs' with arguments '('',)' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /favicon.ico
+Internal Server Error: /docs/index.html
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^docs/(?:index.html)?$)" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^docs/(?:index.html)?$)" is not a valid regular expression: unbalanced parenthesis
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /docs-2
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^docs-2)" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /doc-doc
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^doc-doc)" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /doc-doc
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^doc-doc)" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /doc-doc
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^doc-doc)" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /doc-doc
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^doc-doc)" is not a valid regular expression: unbalanced parenthesis
+Not Found: /favicon.ico
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/Naruto-SD-Powerful-Shippuden-Art-02.png
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Not Found: /media/galeria/imagem/naruto_sd.jpg
+Internal Server Error: /admin/galeria/galeria/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 137, in get_response
+    response = response.render()
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 103, in render
+    self.content = self.rendered_content
+  File "C:\Python27\lib\site-packages\django\template\response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 148, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 527, in render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 80, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 93, in render
+    output = force_text(output)
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 85, in force_text
+    s = six.text_type(s)
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 508, in __str__
+    return self.as_widget()
+  File "C:\Python27\lib\site-packages\django\forms\forms.py", line 560, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "C:\Python27\lib\site-packages\filebrowser\fields.py", line 58, in render
+    return render_to_string("filebrowser/custom_field.html", locals())
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: filebrowser/custom_field.html
+Internal Server Error: /admin/filebrowser/browse/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\decorators.py", line 45, in decorator
+    return function(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\filebrowser\sites.py", line 356, in browse
+    }, context_instance=Context(request, current_app=self.name))
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: filebrowser/index.html
