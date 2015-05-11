@@ -78,6 +78,8 @@ INSTALLED_APPS = (
     'google',
     'sessao',
     'api',
+    'visao',
+    'chart',
 )
 
 MIDDLEWARE_CLASSES = (

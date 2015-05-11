@@ -8532,3 +8532,334 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sessions/backends/base.py", line 49, in __getitem__
     return self._session[key]
 KeyError: 'cliente'
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.response
+  File "/usr/local/lib/python2.7/dist-packages/django/http/response.py", line 324, in serialize
+    return self.serialize_headers() + b'\r\n\r\n' + self.content
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 123, in content
+    raise ContentNotRenderedError('The response content must be '
+ContentNotRenderedError: The response content must be rendered before it can be accessed.
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.serializer
+AttributeError: 'auth_session_get_all_posts' object has no attribute 'serializer'
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.get_authenticate_header(self, request)
+TypeError: get_authenticate_header() takes exactly 2 arguments (3 given)
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.get_authenticate_header(request)
+TypeError: get_authenticate_header() takes exactly 2 arguments (3 given)
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.get_authenticate_header(request)
+TypeError: get_authenticate_header() takes exactly 2 arguments (3 given)
+Internal Server Error: /api/auth-session-get-all-posts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 736, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 686, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 616, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/renderers.py", line 522, in show_form_for_method
+    view.check_permissions(request)
+  File "/home/planetkids/virtualenvs/blog-teste/local/lib/python2.7/site-packages/rest_framework/views.py", line 282, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/home/planetkids/laboratorio/blog-teste/api/permissions.py", line 33, in has_permission
+    print view.get_authenticate_header(request)
+TypeError: get_authenticate_header() takes exactly 2 arguments (3 given)
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/planetkids/laboratorio/blog-teste/visao/views.py", line 30, in <module>
+    @show_msg(view='decorator')
+TypeError: 'NoneType' object is not callable
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 204, in get_response
+    response = middleware_method(request, response)
+  File "/usr/local/lib/python2.7/dist-packages/django/middleware/clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'function' object has no attribute 'get'
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 113, in get_callable
+    (mod_name, func_name))
+ViewDoesNotExist: Could not import visao.views.decorator. View is not callable.
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/planetkids/laboratorio/blog-teste/visao/views.py", line 30, in <module>
+    @show_msg(view='decorator')
+TypeError: show_msg() takes exactly 2 arguments (1 given)
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 113, in get_callable
+    (mod_name, func_name))
+ViewDoesNotExist: Could not import visao.views.decorator. View is not callable.
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 113, in get_callable
+    (mod_name, func_name))
+ViewDoesNotExist: Could not import visao.views.decorator. View is not callable.
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/visao/decorators.py", line 53, in _dec
+    _view.__name__ = view_func.__name__
+AttributeError: 'WSGIRequest' object has no attribute '__name__'
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/visao/decorators.py", line 53, in _dec
+    _view.__name__ = view_func.__name__
+AttributeError: 'WSGIRequest' object has no attribute '__name__'
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 204, in get_response
+    response = middleware_method(request, response)
+  File "/usr/local/lib/python2.7/dist-packages/django/middleware/clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'function' object has no attribute 'get'
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/planetkids/laboratorio/blog-teste/visao/views.py", line 30, in <module>
+    @options(msg="Olá essa mensagem está...")
+TypeError: options() takes exactly 2 arguments (1 given)
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/planetkids/laboratorio/blog-teste/visao/views.py", line 30, in <module>
+    @options(msg="Olá essa mensagem está...")
+  File "/home/planetkids/laboratorio/blog-teste/visao/decorators.py", line 30, in options_decorator
+    request.session['msg'] = msg
+AttributeError: 'function' object has no attribute 'session'
+Internal Server Error: /visao/decorator/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 224, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 231, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/planetkids/laboratorio/blog-teste/visao/views.py", line 28, in <module>
+    from visao.decorators import anonymous_required, options
+ImportError: cannot import name anonymous_required
+Internal Server Error: /charts/morris-charts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/chart/views.py", line 31, in morris_charts
+    return render_to_response('chart/morris-charts.html', locals(), context_instance=RequestContext(request),)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: chart/morris-charts.html

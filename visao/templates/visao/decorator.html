@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block extracss %}{% endblock %}
+
+{% block extrajs %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="large-12 large-centered columns">
+            <h3>Visão <small>estes dados forão processados por um decorator</small></h3>
+            <p><b>Session id:</b> {{ request.session.session_id }}</p>
+            <p><b>Session msg:</b> {{ request.session.msg }}</p>
+        </div>
+    </div>
+{% endblock %}
