@@ -77,6 +77,12 @@
                         <li><a href="{% url 'auth-logout' %}">Logout</a></li>
                     </ul>
                 </li>
+                <li class="has-dropdown">
+                    <a href="#">Log</a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'debug' %}">Debug</a></li>
+                    </ul>
+                </li>
                 <li><a href="/search/">Busca</a></li>
                 <li><a href="{% url 'docs' path %}index.html">Docs</a></li>
             </ul>

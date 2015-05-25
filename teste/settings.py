@@ -249,11 +249,17 @@ site.add_action(flv_to_mp4)
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'default': {
+            'standard': '\n%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+        },
+    },
     'handlers': {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': os.path.join(PROJECT_PATH, 'logs/debug.log'),
+            'formatter': 'standard',
         },
     },
     'loggers': {
@@ -262,5 +268,9 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        'log':{
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        }
     },
 }

@@ -56,6 +56,7 @@ urlpatterns = patterns('',
     url(r'^api/', include('api.urls')),
     url(r'^visao/', include('visao.urls')),
     url(r'^charts/', include('chart.urls')),
+    url(r'^log/', include('log.urls')),
 
     url(r'^entrar/$', 'django.contrib.auth.views.login',{'template_name': 'entrar.html'}, 'entrar'),
     url(r'^sair/$', 'django.contrib.auth.views.logout', {'template_name': 'sair.html'}, 'sair'),
