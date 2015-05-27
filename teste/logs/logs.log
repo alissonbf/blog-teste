@@ -1,0 +1,32 @@
+
+2015-05-27 10:32:23,823 [ERROR] log.views: 
+
+2015-05-27 10:33:55,402 [ERROR] log.views: Traceback (most recent call last):
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 40, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
+
+
+2015-05-27 10:35:09,222 [ERROR] log.views: Traceback (most recent call last):
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 41, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
+
+
+2015-05-27 10:35:29,860 [ERROR] log.views: Traceback (most recent call last):
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 41, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
+
+
+2015-05-27 10:37:31,318 [ERROR] log.views: Traceback (most recent call last):
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 41, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
+
+
+2015-05-27 10:37:42,300 [ERROR] log.views: Traceback (most recent call last):
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 41, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
+

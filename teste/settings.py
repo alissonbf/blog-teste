@@ -80,6 +80,7 @@ INSTALLED_APPS = (
     'api',
     'visao',
     'chart',
+    'log',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -250,8 +251,8 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
-        'default': {
-            'standard': '\n%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+        'standard': {
+            'format': '\n%(asctime)s [%(levelname)s] %(name)s: %(message)s'
         },
     },
     'handlers': {
@@ -261,6 +262,12 @@ LOGGING = {
             'filename': os.path.join(PROJECT_PATH, 'logs/debug.log'),
             'formatter': 'standard',
         },
+        'logs_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(PROJECT_PATH, 'logs/logs.log'),
+            'formatter': 'standard',
+        },
     },
     'loggers': {
         'django.request': {
@@ -268,8 +275,8 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
-        'log':{
-            'handlers': ['file'],
+        'log': {
+            'handlers': ['logs_handler'],
             'level': 'DEBUG',
         }
     },

@@ -94,3 +94,13 @@ ObjectDoesNotExist
 2015-05-25 15:44:29,353 [WARNING] django.request: Not Found: /log/debug/
 
 2015-05-25 15:46:59,215 [WARNING] django.request: Not Found: /log/debug/
+
+2015-05-27 10:28:07,056 [WARNING] django.request: Not Found: /favicon.ico
+
+2015-05-27 10:28:09,284 [ERROR] django.request: Internal Server Error: /log/debug/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/planetkids/laboratorio/blog-teste/log/views.py", line 29, in debug
+    raise ObjectDoesNotExist
+ObjectDoesNotExist
